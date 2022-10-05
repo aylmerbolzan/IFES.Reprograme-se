@@ -14,10 +14,10 @@ ponto turístico em questão.
 Entretanto, não são vantajosas quando se trata de exibir fotos. Visite os sites https://www.svgrepo.com/
 e https://freesvg.org/ em busca de 5 imagens vetoriais que estejam dentro de um dos seguintes temas:
 
-a. Natal
-b. Aniversário
-c. Universo
-d. Robótica
+1. Natal
+2. Aniversário
+3. Universo
+4. Robótica
 
 Agora crie uma página HTML intitulada “Imagens de NomeDoTema” e apresente as imagens da melhor
 forma que conseguir, considerando apenas aquilo que aprendeu até esse ponto do curso.
