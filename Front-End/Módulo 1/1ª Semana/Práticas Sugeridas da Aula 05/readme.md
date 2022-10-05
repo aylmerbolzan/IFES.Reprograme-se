@@ -1,16 +1,16 @@
-1. Utilizando a busca de imagens do Google, localize imagens dos 5 pontos turísticos mais próximos de sua cidade e salve essas imagens em uma nova pasta de sua área de trabalho. Agora crie um arquivo chamado “index.html” dentro dessa mesma pasta e inclua o código HTML necessário para criar uma galeria com essas 5 imagens, colocando um título em cada uma delas e um título na página (Pontos Turísticos de Nome Cidade).
+1. Utilizando a busca de imagens do Google, localize imagens dos 5 pontos turï¿½sticos mais prï¿½ximos de sua cidade e salve essas imagens em uma nova pasta de sua ï¿½rea de trabalho. Agora crie um arquivo chamado ï¿½index.htmlï¿½ dentro dessa mesma pasta e inclua o cï¿½digo HTML necessï¿½rio para criar uma galeria com essas 5 imagens, colocando um tï¿½tulo em cada uma delas e um tï¿½tulo na pï¿½gina (Pontos Turï¿½sticos de Nome Cidade).
 
-2. Crie uma pasta chamada “img” dentro da pasta anterior e mova as imagens dos pontos turísticos para essa nova pasta. Em seguida, acerte os elementos IMG para que eles apontem para os novos endereços.
+2. Crie uma pasta chamada ï¿½imgï¿½ dentro da pasta anterior e mova as imagens dos pontos turï¿½sticos para essa nova pasta. Em seguida, acerte os elementos IMG para que eles apontem para os novos endereï¿½os.
 
-3. Transforme cada imagem do projeto anterior em um link que aponte para a página da cidade onde fica o ponto turístico em questão.
+3. Transforme cada imagem do projeto anterior em um link que aponte para a pï¿½gina da cidade onde fica o ponto turï¿½stico em questï¿½o.
 
-4. As imagens vetoriais apresentam a vantagem de não sofrer distorção quando são redimensionadas. Entretanto, não são vantajosas quando se trata de exibir fotos. Visite os sites https://www.svgrepo.com/ e https://freesvg.org/ em busca de 5 imagens vetoriais que estejam dentro de um dos seguintes temas:
+4. As imagens vetoriais apresentam a vantagem de nï¿½o sofrer distorï¿½ï¿½o quando sï¿½o redimensionadas. Entretanto, nï¿½o sï¿½o vantajosas quando se trata de exibir fotos. Visite os sites https://www.svgrepo.com/ e https://freesvg.org/ em busca de 5 imagens vetoriais que estejam dentro de um dos seguintes temas:
 
 a. Natal
-b. Aniversário
+b. Aniversï¿½rio
 c. Universo
-d. Robótica
+d. Robï¿½tica
 
-Agora crie uma página HTML intitulada “Imagens de NomeDoTema” e apresente as imagens da melhor forma que conseguir, considerando apenas aquilo que aprendeu até esse ponto do curso.
+Agora crie uma pï¿½gina HTML intitulada ï¿½Imagens de NomeDoTemaï¿½ e apresente as imagens da melhor forma que conseguir, considerando apenas aquilo que aprendeu atï¿½ esse ponto do curso.
 
-5. Utilizando o site https://www.image-map.net/ , crie uma página que possua a imagem a seguir (https://img.freepik.com/vetores-gratis/coleta-de-frutas-planas-organicas_23-2148950159.jpg) mapeada de forma que, quando uma fruta for clicada, vejamos uma nova página com a tradução de seu nome para inglês. Para isso, utilize o link a seguir, onde o texto PALAVRA deve ser substituído pelo nome da fruta a ser traduzido. https://translate.google.com/?sl=pt&tl=en&text=PALAVRA
+5. Utilizando o site https://www.image-map.net/ , crie uma pï¿½gina que possua a imagem a seguir (https://img.freepik.com/vetores-gratis/coleta-de-frutas-planas-organicas_23-2148950159.jpg) mapeada de forma que, quando uma fruta for clicada, vejamos uma nova pï¿½gina com a traduï¿½ï¿½o de seu nome para inglï¿½s. Para isso, utilize o link a seguir, onde o texto PALAVRA deve ser substituï¿½do pelo nome da fruta a ser traduzido. https://translate.google.com/?sl=pt&tl=en&text=PALAVRA
