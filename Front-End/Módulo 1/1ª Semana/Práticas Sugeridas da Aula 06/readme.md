@@ -1,0 +1,1 @@
+Em uma página HTML, cria uma página contendo os vídeos desse módulo separados por semana, usando somente os recursos HTML que estudamos até o momento. Quando concluir, faça uma captura de imagem da página utilizando a extensão GoFullPage do Chrome (https://chrome.google.com/webstore/detail/gofullpage-full-pagescre/fdpohaocaechififmbbbbbknoalclacl), e publique.
