@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práticas Sugeridas da Aula 09</title>
+</head>
+
+<body>
+    <h1>Práticas Sugeridas da Aula 09</h1>
+    <hr>
+    <table border="2" align="center" rules="all" width="400" cellpadding="10">
+        <td>
+            <h2 align="center">Formulário de Contato</h2>
+        </td>
+
+        <tr>
+            <td>
+                <form method="post" action="/contato/cotar">
+                    <p>
+                        <label for="txtNomeDono">Nome Completo:</label><br>
+                        <input type="text" name="NomeDono" id="txtNomeDono" placeholder="Digite seu nome completo"
+                            style="width: 365px;">
+                    </p>
+
+                    <fieldset>
+                        <legend>Selecione o animal:</legend>
+                        <input type="radio" name="Animal" id="rdCachorro">
+                        <label for="rdAnimal">Cachorro</label><br>
+                        <input type="radio" name="Animal" id="rdCoelho">
+                        <label for="rdAnimal">Coelho</label><br>
+                        <input type="radio" name="Animal" id="rdGato">
+                        <label for="rdAnimal">Gato</label><br>
+                        <input type="radio" name="Animal" id="rdPassaro">
+                        <label for="rdAnimal">Pássaro</label><br>
+                    </fieldset>
+
+                    <p>
+                        <label for="txtTipoServico">Tipo de Serviço:</label><br>
+                        <input type="text" name="TipoServico" id="txtTipoServico"
+                            placeholder="Digite o serviço desejado" style="width: 365px;">
+                    </p>
+
+                    <p>
+                        <label for="txtObservacoes">Observações:</label><br>
+                        <textarea style="width: 365px;" rows="10" name="Observacoes" id="txtObservacoes"
+                            placeholder="Utilize esse espaço caso tenha alguma observação a apresentar"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
