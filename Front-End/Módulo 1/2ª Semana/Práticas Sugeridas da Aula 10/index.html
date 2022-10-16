@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práticas Sugeridas da Aula 10</title>
+</head>
+
+<body>
+    <h1>Práticas Sugeridas da Aula 10</h1>
+    <hr>
+    <table border="2" align="center" rules="all" width="400" cellpadding="10">
+        <tr>
+            <td>
+                <h2 align="center">Cadastro de Cliente</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form method="post" action="/cliente/cadastrar">
+                    <p>
+                        <label for="txtNome">*Nome:</label><br>
+                        <input type="text" name="Nome" id="txtNome" placeholder="Digite seu nome" style="width: 98%;"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="txtEmail">*E-mail:</label><br>
+                        <input type="email" name="Email" id="txtEmail" placeholder="aaa@aaaa.com" style="width: 98%;"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="txtURL">URL do Portfólio Online:</label><br>
+                        <input type="url" name="URL" id="txtURL" placeholder="https://" style="width: 98%;">
+                    </p>
+
+                    <p>
+                        <label for="txtNascimento">*Data de Nascimento:</label><br>
+                        <input type="date" name="Nascimento" id="txtNascimento" style="width: 99%;" min="1945-10-17"
+                            max="2022-10-17" required>
+                    </p>
+
+                    <p>
+                        <label for="txtDependentes">*Quantidade de Dependentes:</label><br>
+                        <input type="number" name="Dependentes" id="txtDependentes"
+                            placeholder="Selecione a quantidade de dependentes" min="0" style="width: 98%;" required>
+                    </p>
+
+                    <p>
+                        <label for="txtCor">Cor Preferida:</label><br>
+                        <input type="color" name="Cor" id="txtCor" style="width: 100%;">
+                    </p>
+
+                    <p>
+                        <label for="txtTelefone">*Telefone:</label><br>
+                        <input type="tel" name="Telefone" id="txtTelefone" placeholder="99 99999-9999"
+                            pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" style="width: 98%;" required>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="Newsletter" value="Aceito">Aceito receber ofertas e promoções<br>
+                    </p>
+
+                    <p>
+                        <label for="slctEstado">*Estado:</label><br>
+                        <select name="Estado" id="slctEstado" style="width: 100%;" required>
+                            <option disabled selected>Selecione...</option>
+                            <optgroup label="Centro Oeste">
+                                <option value="DF">Distrito Federal</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MT">Mato Grosso</option>
+                            </optgroup>
+                            <optgroup label="Nordeste">
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="SE">Sergipe</option>
+                            </optgroup>
+                            <optgroup label="Norte">
+                                <option value="AC">Acre</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="PA">Pará</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="TO">Tocantins</option>
+                            </optgroup>
+                            <optgroup label="Sudeste">
+                                <option value="ES">Espirito Santo</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="PR">Paraná</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="SC">Santa Catarina</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="txtMinibio">*Mini-Biografia:</label><br>
+                        <textarea style="width: 98%;" rows="10" name="MiniBiografia" id="txtMinibio"
+                            required></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

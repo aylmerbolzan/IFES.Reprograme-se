@@ -1,0 +1,1 @@
+O formulário HTML apresentado contém 10 tipos diferentes de campos de entrada de dados. Faça o código HTML desse formulário, considerando que ele deve ser enviado para o endereço “/cliente/cadastrar”.
