@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+.perfil {
+    border-radius: 50%;    
+}
+
+.name {
+    color: #667eea;
+    font-size: 40px;
+    font-family: Open Sans;
+    font-weight: 600;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.description {
+    color: #6f86d6;
+    font-size: 16px;
+    font-family: Courier New;
+    font-weight: 600;
+    vertical-align: top;
+    padding-left: 0.5em;
+}
+
+#header {
+    border-bottom: 1px solid #667eea;
+    margin: 0 auto;
+    width: 100%;
+    background-image: linear-gradient(#B1F3CF, #CCC8F1);
+    border-collapse: separate;
+    padding: 2.5em 5em;
+}
+
+#footer {
+    text-align: center;
+    margin: 0 auto;
+    font-family: Open Sans;
+    font-weight: bold;
+    width: 1280px;
+}
