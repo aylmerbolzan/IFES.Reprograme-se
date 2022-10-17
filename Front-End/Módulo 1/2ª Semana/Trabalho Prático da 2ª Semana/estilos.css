@@ -100,3 +100,10 @@ a {
     width: 100%;
     background-image: linear-gradient(#eafff3, #fff);
 }
+
+
+
+
+progress {
+    width: 90%;
+}
