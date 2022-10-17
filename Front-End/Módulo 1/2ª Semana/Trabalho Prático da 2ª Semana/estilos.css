@@ -2,12 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Open+Sans:wght@400;500&display=swap');
 
+body {
+    background-color:#F0E2BB;
+    margin:0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333334;
+}
+
 #header {
     border-bottom: 1px solid #667eea;
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     background-image: linear-gradient(#4cac87, #314134);
-    border-collapse: separate;
     padding: 2.5em 0 2.5em 2.5em;
 
 }
@@ -34,44 +43,25 @@
 #body1 {
     margin: 0 auto;
     width: 80%;
-    border-collapse: separate;
     font-family: Caveat;
     font-size: 25px;
 }
 
-#footer {
-    text-align: center;
-    margin: 0 auto;
-    font-family: Open Sans;
-    font-weight: bold;
-    width: 1280px;
-    background-image: linear-gradient(#eafff3, #fff);
-}
-
-
-
-
-
-
-a {
-    text-decoration: none;
-}
-
-.amenu {
+.menu {
     color: #333334;
     padding: 17px;
     white-space: nowrap;
 }
 
-.amenu:hover {
+.menu:hover {
     color: #fff;
     background-color: #3E5BA0;
     border-radius: 15px;
-    padding: 9% 28%;
+    padding: 7% 28%;
     white-space: nowrap;
 }
 
-.herosection1 {
+.herosection {
     color: #B6BECC;
     background-color: #333334;
     border-radius: 25px;
@@ -92,4 +82,21 @@ a {
     font-weight: 600;
     cursor: pointer;
     font-size: 15px;
+}
+
+#body2 {
+    margin: 0 auto;
+    width: 80%;
+    font-family: Open Sans;
+    font-size: 18px;
+    padding: 0 0.8em 2em;
+}
+
+#footer {
+    text-align: center;
+    margin: 0 auto;
+    font-family: Open Sans;
+    font-weight: bold;
+    width: 100%;
+    background-image: linear-gradient(#eafff3, #fff);
 }
