@@ -13,7 +13,8 @@
 <body>
     <table id="header" cellpadding="5">
         <tr>
-            <td rowspan="2" width="190" align="right"><img src="img/perfil.jpg" alt="Perfil" width="100" class="perfil">
+            <td rowspan="2" width="190" align="right"><img src="img/perfil.jpg" alt="Perfil" width="120"
+                    style="border-radius: 50%;">
             </td>
             <td class="name" height="60">Aylmer Bolzan</td>
         </tr>
@@ -21,29 +22,99 @@
             <td class="description">Domingos Martins - ES</td>
         </tr>
     </table>
-    <hr>
 
-    <nav>
-        <a href="index.html"><strong>Principal</strong></a> ::
-        <a href="quemsou.html"><strong>Quem Sou</strong></a> ::
-        <a href="projetos.html"><strong>Projetos</strong></a> ::
-        <a href="contato.html"><strong><i>Contato</i></strong></a>
-    </nav>
+    <table class="navigation" style="border-spacing: 15px;">
+        <tr align="center">
 
-    <hr>
-    <h1>Contato:</h1>
+            <td width="25%"><a href="index.html" class="menu"><strong>Principal</strong></a></td>
 
-    <ul>
-        <li>Galo - Domingos Martins/ES</li>
-        <li><a href="mailto:aylmer.bolzan@gmail.com" target="_blank">aylmer.bolzan@gmail.com</a></li>
-        <li><a href="tel:5527998993129">(27) 99899-3129</a> <a href="https://wa.me/5527998993129"
-                style="text-decoration:none" target="_blank">&#x1f4ad;</a></li>
-        <li><a href="https://www.linkedin.com/in/aylmerbolzan/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/aylmerbolzan" target="_blank">GitHub</a></li>
-        <li><a href="https://www.instagram.com/aylmerbolzan/" target="_blank">Instagram</a></li>
-    </ul>
+            <td width="25%"><a href="quemsou.html" class="menu"><strong>Quem Sou</strong></a></td>
 
-    <hr>
+            <td width="25%"><a href="projetos.html" class="menu"><strong>Projetos</strong></a></td>
+
+            <td style="background-color: #333334; border-radius: 15px; color: #fff; text-align: center; padding: 17px;"
+                width="25%">
+
+                <a href="contato.html" style="color:#fff;"><strong>Contato</strong></a>
+            </td>
+        </tr>
+    </table>
+
+    <table class="body">
+        <tr>
+            <td colspan="6">
+                <h1>Entre em contato</h1>
+                <p>Preencha os campos do formulário abaixo e em até 48h lhe responderei. Será um prazer lhe atender!</p>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <table class="body">
+        <tr>
+            <td>
+                <form method="post">
+                    <p>
+                        <label for="slctEstado">Assunto:</label><br>
+                        <select name="Estado" id="slctEstado" style="width: 29.5%; height: 34px;" required class="form">
+                            <option disabled selected>Selecione o assunto</option>
+                                <option value="autoMkt">Automação de Marketing</option>
+                                <option value="trafego">Gestão de Tráfego Pago</option>
+                                <option value="ecomm">Implantação de CRM</option>
+                                <option value="ecomm">Implantação de E-commerce</option>
+                                <option value="ecomm">Outros assuntos</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="txtNome">Nome:</label><br>
+                        <input type="text" name="Nome" id="txtNome" placeholder="Digite seu nome"
+                            style="width: 29%; height: 30px;" required class="form">
+                    </p>
+
+                    <p>
+                        <label for="txtEmail">E-mail:</label><br>
+                        <input type="email" name="Email" id="txtEmail" placeholder="Digite seu email"
+                            style="width: 29%; height: 30px;" required class="form">
+                    </p>
+
+                    <p>
+                        <label for="txtTelefone">Telefone:</label><br>
+                        <input type="tel" name="Telefone" id="txtTelefone" placeholder="99 99999-9999"
+                            pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" style="width: 29%; height: 30px;" required
+                            class="form">
+                    </p>
+
+                    <p>
+                        <label for="txtMinibio">Mensagem:</label><br>
+                        <textarea style="width: 29%;" rows="10" name="MiniBiografia" id="txtMinibio" required
+                            class="form"></textarea>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Enviar" class="button">
+                    </p>
+                </form>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td><hr><h2>Outras formas de contato:</h2>
+                
+                <ul style="list-style: none;">
+                    <li>Galo - Domingos Martins/ES</li>
+                    <li><a href="mailto:aylmer.bolzan@gmail.com" target="_blank">aylmer.bolzan@gmail.com</a></li>
+                    <li><a href="tel:5527998993129">(27) 99899-3129</a> <a href="https://wa.me/5527998993129"
+                            style="text-decoration:none" target="_blank">&#x1f4ad;</a></li>
+                    <li><a href="https://www.linkedin.com/in/aylmerbolzan/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/aylmerbolzan" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/aylmerbolzan/" target="_blank">Instagram</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 
     <table id="footer">
         <tr>

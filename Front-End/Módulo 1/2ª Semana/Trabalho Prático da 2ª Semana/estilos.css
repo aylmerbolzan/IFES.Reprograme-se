@@ -12,13 +12,25 @@ a {
     color: #333334;
 }
 
+progress {
+    width: 90%;
+}
+
+h4 {
+    margin-bottom: -15px;
+}
+
+.form {
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
 #header {
     border-bottom: 1px solid #667eea;
     margin: 0 auto;
     width: 100%;
     background-image: linear-gradient(#4cac87, #314134);
     padding: 2.5em 0 2.5em 2.5em;
-
 }
 
 .name {
@@ -40,7 +52,7 @@ a {
     padding-left: 1em;
 }
 
-#body1 {
+.navigation {
     margin: 0 auto;
     width: 80%;
     font-family: Caveat;
@@ -51,6 +63,14 @@ a {
     color: #333334;
     padding: 17px;
     white-space: nowrap;
+}
+
+.body {
+    margin: 0 auto;
+    width: 80%;
+    font-family: Open Sans;
+    font-size: 18px;
+    padding: 0 0.8em 2em;
 }
 
 .menu:hover {
@@ -77,19 +97,11 @@ a {
     color: #fff;
     background-color: #3D57A1;
     border-radius: 10px;
-    padding: 1em;
+    padding: 1em 1.5em;
     font-family: Open Sans;
     font-weight: 600;
     cursor: pointer;
     font-size: 15px;
-}
-
-#body2 {
-    margin: 0 auto;
-    width: 80%;
-    font-family: Open Sans;
-    font-size: 18px;
-    padding: 0 0.8em 2em;
 }
 
 #footer {
@@ -99,11 +111,4 @@ a {
     font-weight: bold;
     width: 100%;
     background-image: linear-gradient(#eafff3, #fff);
-}
-
-
-
-
-progress {
-    width: 90%;
 }
