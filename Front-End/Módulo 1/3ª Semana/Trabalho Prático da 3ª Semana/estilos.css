@@ -12,6 +12,7 @@
 
 .mb3 {
     margin-bottom: 1.5rem !important;
+    text-align: justify;
 }
 
 .mt3 {
@@ -109,6 +110,7 @@ h3 {
 .texto {
     background-color: #fff;
     padding: 5px 30px;
+    text-align: left;
 }
 
 .clear {
@@ -142,8 +144,8 @@ h1 {
     color: #fff;
 }
 
-.w80 {
-    width: 80% !important;
+.w30 {
+    width: 30% !important;
     background-color: #333;
     height: 100%;
     line-height: 6.5vh;
@@ -163,6 +165,27 @@ h1 {
     line-height: 6.5vh;
 }
 
+.w70 {
+    width: 70% !important;
+    background-color: #333;
+    height: 100%;
+    line-height: 6.5vh;
+}
+
+.w80 {
+    width: 80% !important;
+    background-color: #333;
+    height: 100%;
+    line-height: 6.5vh;
+}
+
+.w100 {
+    width: 100% !important;
+    background-color: #333;
+    height: 100%;
+    line-height: 6.5vh;
+}
+
 .fw-normal {
     font-weight: normal !important;
 }
@@ -170,4 +193,16 @@ h1 {
 
 .mb1 {
     margin-bottom: .5rem !important;
+}
+
+.card {
+    width: calc((100% - 1.6rem)/3);
+    background-color: white;
+    width: 80%;
+}
+
+.card img {
+    width: 30%;
+    border-bottom: solid 1px #ddd;
+    background-color: fff;
 }
