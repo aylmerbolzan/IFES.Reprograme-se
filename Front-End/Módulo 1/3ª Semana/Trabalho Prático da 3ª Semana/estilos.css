@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+.mx1 {
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+}
+
+.my3 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.mb3 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt3 {
+    margin-top: 1.5rem !important;
+}
+
+.p5 {
+    padding: 2.5rem !important;
+}
+
+.bg-dark {
+    background-color: #333;
+}
+
+.py1 {
+    padding-top: .5rem !important;
+    padding-bottom: .5px !important;
+    display: flex;
+}
+
+.py1 img {
+    width: 20px;
+    padding-right: 0.4rem
+}
+
+.pt3 {
+    padding-top: 1.5rem !important;
+}
+
+
+
+
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    width: 1280px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+
+.conteiner {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.areaesquerda {
+    width: 15vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    padding: 15px;
+    top: 0px;
+}
+
+.foto img {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.social {
+    display: flex;
+    width: 20px;
+}
+
+.social img {
+    padding-right: 0.1rem
+}
+
+.areadireita {
+    padding-left: 18vw;
+    width: 62vw;
+    height: 100vh;
+}
+
+hr {
+    border: 0;
+    height: 6px;
+    background-color: #ddd;
+}
+
+h3 {
+    margin-bottom: -30px;
+}
+
+.texto {
+    background-color: #fff;
+    padding: 5px 30px;
+}
+
+.clear {
+    clear: both !important;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 140px;
+    display: inline-block;
+    font-size: 1.3vw;
+    position: relative;
+    float: right;
+}
+
+.hero {
+    display: flex;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+.progresso {
+    background-color: #ddd;
+    height: 3vw;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.w80 {
+    width: 80% !important;
+    background-color: #333;
+    height: 100%;
+    line-height: 6.5vh;
+}
+
+.w40 {
+    width: 40% !important;
+    background-color: #333;
+    height: 100%;
+    line-height: 6.5vh;
+}
+
+.w60 {
+    width: 60% !important;
+    background-color: #333;
+    height: 100%;
+    line-height: 6.5vh;
+}
+
+.fw-normal {
+    font-weight: normal !important;
+}
+
+
+.mb1 {
+    margin-bottom: .5rem !important;
+}
