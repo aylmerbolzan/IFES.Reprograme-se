@@ -198,11 +198,21 @@ h1 {
 .card {
     width: calc((100% - 1.6rem)/3);
     background-color: white;
-    width: 80%;
+    width: 20vw;
+    display: inline-block;
+    border-radius: 15px;
 }
 
 .card img {
-    width: 30%;
+    width: 20vw;
     border-bottom: solid 1px #ddd;
     background-color: fff;
+}
+
+.my1 {
+    margin: .5rem !important;
+}
+
+.p1 {
+    padding: .5rem !important;
 }
