@@ -42,12 +42,6 @@
     padding-top: 1.5rem !important;
 }
 
-
-
-
-
-
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #eee;
@@ -59,12 +53,10 @@ a {
     color: #333;
 }
 
-
-
-
 .conteiner {
     width: 80vw;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 .areaesquerda {
@@ -79,28 +71,30 @@ a {
 
 .foto img {
     border-radius: 10px;
-    width: 200px;
+    width: 100%;
 }
 
 .social {
-    display: flex;
+    display: inline-flex;
     width: 20px;
 }
 
 .social img {
-    padding-right: 0.1rem
+    margin-right: 0.1rem !important;
 }
 
 .areadireita {
-    padding-left: 18vw;
+    padding-left: 18vw !important;
     width: 62vw;
     height: 100vh;
+    position: relative;
 }
 
 hr {
     border: 0;
-    height: 6px;
+    height: 8px;
     background-color: #ddd;
+    margin: 15px 0 15px;
 }
 
 h3 {
@@ -110,6 +104,7 @@ h3 {
 .texto {
     background-color: #fff;
     padding: 5px 30px;
+    vertical-align: super;
     text-align: left;
 }
 
@@ -198,7 +193,6 @@ h1 {
     font-weight: normal !important;
 }
 
-
 .mb1 {
     margin-bottom: .5rem !important;
 }
@@ -252,4 +246,58 @@ td h3 {
 
 .bg-gray {
     background-color: #ddd;
+}
+
+.rodape {
+    color: #ddd;
+    text-align: center;
+    font-size: small;
+    padding: 1.5rem;
+}
+
+.contato table {
+    width: 100%;
+    text-align: center;
+    border: solid 1px #eee;
+    border-collapse: collapse;
+}
+
+.contato table img {
+    height: 64px;
+    width: 33vh;
+}
+
+.contato {
+    background-color: #888;
+    padding: 15px;
+    color: white;
+}
+
+.contato a {
+    color: #fff;
+}
+
+.contato table td {
+    padding: 15px;
+    border: solid 1px #ccc;
+}
+
+.contato input,
+.contato select,
+.contato textarea {
+    padding: 15px;
+    font-size: 1vw;
+    font-family: 'Montserrat';
+    width: 96%;
+}
+
+.contato select {
+    width: 100% !important;
+}
+
+.enviar {
+    background-color: #333;
+    color: #fff;
+    max-width: 120px;
+    border: 0;
 }

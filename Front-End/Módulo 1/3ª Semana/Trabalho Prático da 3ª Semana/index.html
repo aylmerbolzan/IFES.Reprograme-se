@@ -27,7 +27,7 @@
             <p class="pt3 social">
 
                 <!--Itens de contatos-->
-                <img src="img/social/facebook.svg" alt="">
+                <img src="img/social/facebook.svg" alt=""></span>
                 <img src="img/social/instagram.svg" alt="">
                 <img src="img/social/linkedin.svg" alt="">
                 <img src="img/social/snapchat.svg" alt="">
@@ -196,8 +196,8 @@
                     <h3 class="my1 p1">GoldClube.com</h3>
                     <p class="lh3 p1">Agência de marketing de afiliação da região das montanhas capixabas que atua
                         com produtos cosméticos, principalmente produtos capilares e emagrecedores.<br>Trabalhando com a
-                        criação
-                        de landing pages e focado em performance de tráfego pago, elevamos o marketing digital regional
+                        produção
+                        de landing pages ede alta conversão focado em performance de tráfego pago, elevamos o marketing digital regional
                         a outro
                         nível ainda não trabalhado anteriormente.</p>
                 </div>
@@ -230,9 +230,15 @@
             <div class="precos">
                 <table>
                     <tr>
-                        <td class="bg-gray"><h3>Site Básico</h3></td>
-                        <td class="bg-green"><h3 style="color: #FFF;">Site Pro</h3></td>
-                        <td class="bg-gray"><h3>Site Premium</h3></td>
+                        <td class="bg-gray">
+                            <h3>Site Básico</h3>
+                        </td>
+                        <td class="bg-green">
+                            <h3 style="color: #FFF;">Site Pro</h3>
+                        </td>
+                        <td class="bg-gray">
+                            <h3>Site Premium</h3>
+                        </td>
                     </tr>
                     <tr>
                         <td>Até 4 páginas</td>
@@ -271,15 +277,74 @@
             <hr id="contato" class="mt3">
             <h2 class="my3">#entre_em_contato</h2>
             <div class="contato">
-                <table></table>
-                <form action="post" class="my3"></form>
-            </div>
+                <table>
+                    <tr>
+                        <td><img src="img/email.svg"><br>
+                            <a href="mailto:aylmer.bolzan@gmail.com">aylmer.bolzan@gmail.com</a>
+                        </td>
+                        <td class="bg-green"><img src="img/local.svg"><br>
+                            <span>Domingos Martins / ES</span>
+                        </td>
+                        <td><img src="img/telefone.svg"><br>
+                            <a href="tel:27998993129">(27) 99899-3129</a>
+                        </td>
+                    </tr>
+                </table>
+                <form action="post" class="my3">
 
+
+                    <div>
+                        <p>
+                            <label for="txtNome">Nome:</label><br>
+                            <input type="text" name="Nome" id="txtNome" placeholder="Digite seu nome" required
+                                class="form">
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="txtEmail">E-mail:</label><br>
+                            <input type="email" name="Email" id="txtEmail" placeholder="Digite seu email" required
+                                class="form">
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="dataNasc">Data de Nascimento:</label><br>
+                            <input type="date" name="Nasc" id="dataNasc" required class="form">
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="slctEstado">Assunto:</label><br>
+                            <select name="Estado" id="slctEstado" required class="form">
+                                <option disabled selected>Selecione o assunto</option>
+                                <option value="autoMkt">Automação de Marketing</option>
+                                <option value="trafego">Gestão de Tráfego Pago</option>
+                                <option value="crm">Implantação de CRM</option>
+                                <option value="ecomm">Implantação de E-commerce</option>
+                                <option value="outros">Outros assuntos</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="txtMensagem">Mensagem:</label><br>
+                            <textarea rows="10" name="MiniBiografia" id="txtMensagem" required class="form"></textarea>
+                        </p>
+                    </div>
+
+                    <input type="submit" class="enviar" value="Enviar">
+                </form>
+            </div>
 
             <!--Rodapé-->
-            <div class="rodape bg-dark p5">
+            <div class="rodape bg-dark">
+                <text>Copyright &copy; 2022<br>
+                    Instituto Federal do Espírito Santo<br>
+                    Todos os direitos reservados</text>
 
             </div>
+
         </div>
     </div>
 </body>
