@@ -264,7 +264,6 @@ td h3 {
 
 .contato table img {
     height: 64px;
-    width: 33vh;
 }
 
 .contato {
@@ -278,8 +277,9 @@ td h3 {
 }
 
 .contato table td {
-    padding: 15px;
+    padding: 1.5rem;
     border: solid 1px #ccc;
+    width: 33.33%;
 }
 
 .contato input,
