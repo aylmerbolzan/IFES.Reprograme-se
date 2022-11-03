@@ -18,4 +18,8 @@ Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os eleme
 
 # Resultado Obtido
 
+<center>
+
 ![Resultado](./img/result.png)
+
+</center>
