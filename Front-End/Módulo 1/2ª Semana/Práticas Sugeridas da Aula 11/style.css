@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@450&display=swap");
+
+* {
+  font-family: Montserrat;
+}
+
+h1 {
+  padding-top: 15px;
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+}
+
+h2 {
+  padding-bottom: 15px;
+}
+
+.destacado {
+  background-color: #ebecf3;
+}
+
+label {
+  font-weight: 500;
+}
+
+textarea:focus,
+#txtNome:focus {
+  color: #696eb8;
+  font-weight: 500;
+}
+
+p,
+h2,
+.textoSimples {
+  font-size: 1rem !important;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+p i {
+  font-size: 0.75rem;
+}
+
+p > strong {
+  text-decoration: underline;
+  font-size: 0.8rem;
+}
+
+table {
+  border: solid 2px #c3c2cc;
+  margin: 50px auto;
+}

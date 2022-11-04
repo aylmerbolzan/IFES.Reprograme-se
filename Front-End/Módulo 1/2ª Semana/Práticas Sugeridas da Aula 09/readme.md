@@ -2,7 +2,11 @@
 
 Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os elementos HTML usados para se criar formulários com campos de diversos tipos para se enviar dados à uma aplicação web que irá processar esses dados e devolver uma resposta ao usuário.
 
+<center>
+
 [![Assistir no YouTube](./img/maxresdefault.jpg)](https://youtu.be/45GS8UKy4dc)
+
+</center>
 
 # Práticas Sugeridas da Aula 09
 

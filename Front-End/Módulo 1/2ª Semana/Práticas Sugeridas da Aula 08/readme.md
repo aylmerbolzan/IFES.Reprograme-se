@@ -2,7 +2,11 @@
 
 Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os elementos HTML usados para se exibir dados de forma tabular. Mostra como organizar a tabela semanticamente e como usar atributos para promover algumas configurações visuais na tabela.
 
+<center>
+
 [![Assistir no YouTube](./img/maxresdefault.jpg)](https://youtu.be/GRtZpmOY01c)
+
+</center>
 
 # Práticas Sugeridas da Aula 08
 

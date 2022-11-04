@@ -25,9 +25,21 @@ Agora veja, no restante desse documento, as capturas de tela das páginas pronta
 
 ![Imagem 01](./img/image01.png)
 
+</center>
+
+<center>
+
 ![Imagem 02](./img/image02.png)
 
+</center>
+
+<center>
+
 ![Imagem 03](./img/image03.png)
+
+</center>
+
+<center>
 
 ![Imagem 04](./img/image04.png)
 
@@ -44,9 +56,21 @@ Agora veja, no restante desse documento, as capturas de tela das páginas pronta
 
 ![Resultado](./img/result01.png)
 
+</center>
+
+<center>
+
 ![Resultado](./img/result02.png)
 
+</center>
+
+<center>
+
 ![Resultado](./img/result03.png)
+
+</center>
+
+<center>
 
 ![Resultado](./img/result04.png)
 

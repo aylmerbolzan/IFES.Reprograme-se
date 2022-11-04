@@ -2,7 +2,11 @@
 
 Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os elementos HTML usados para se criar imagens vetoriais do tipo SVG, passando por todas as formas básicas e seus atributos e mostrando também como criar animações baseadas em elementos e atributos de elementos.
 
+<center>
+
 [![Assistir no YouTube](./img/maxresdefault.jpg)](https://youtu.be/RyRiXwSPclU)
+
+</center>
 
 # Práticas Sugeridas da Aula 07
 

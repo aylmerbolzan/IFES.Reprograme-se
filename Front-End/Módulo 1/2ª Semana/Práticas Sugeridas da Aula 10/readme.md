@@ -2,7 +2,11 @@
 
 Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os diferentes tipos de campos possíveis de serem adicionados a um formulário utilizando elementos do tipo INPUT, incluindo campos para e-mail, senha, url, telefone, datas, entre outros. Mostro também diversos recursos usados para validação de campos pelo próprio navegador.
 
+<center>
+
 [![Assistir no YouTube](./img/maxresdefault.jpg)](https://youtu.be/NS5QtI36cnI)
+
+</center>
 
 # Práticas Sugeridas da Aula 10
 

@@ -2,7 +2,11 @@
 
 Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os elementos HTML textuais básicos, incluindo elementos para títulos e subtítulos, parágrafos, listas, links, apresentação de código-fonte, entre outros. Além de mostrar como utilizar cada tipo de elemento, também fala a respeito da questão semântica de cada elemento.
 
+<center>
+
 [![Assistir no YouTube](./img/maxresdefault.jpg)](https://youtu.be/Bk-R_j5JnKg)
+
+</center>
 
 # Práticas Sugeridas da Aula 04
 

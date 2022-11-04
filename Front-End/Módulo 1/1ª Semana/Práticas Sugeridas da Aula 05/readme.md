@@ -2,7 +2,11 @@
 
 Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os elementos HTML usados para se exibir imagens, principalmente o elemento "img". Mostra também as diferenças entre imagens comuns e vetoriais, as formas de se mapear uma imagem em regiões clicáveis usando o elemento "map", e um recurso que permite carregar imagens específicas para determinadas resoluções de tela usando o elemento "picture".
 
+<center>
+
 [![Assistir no YouTube](./img/maxresdefault.jpg)](https://youtu.be/h7D803DK0vY)
+
+</center>
 
 # Práticas Sugeridas da Aula 05
 

@@ -3,6 +3,8 @@
 
 ***
 
+<center>
+
 | Links das Aulas e Atividades |
 | ------- |
 |[- Aula 01: Como Funcionam os Sites](https://github.com/aylmerbolzan/Reprograme-se/tree/master/Front-End/Módulo%201/1ª%20Semana/Práticas%20Sugeridas%20da%20Aula%2001)|
@@ -13,3 +15,5 @@
 |[- Aula 06: Elementos HTML para Exibição de Conteúdo Multimídia](https://github.com/aylmerbolzan/Reprograme-se/tree/master/Front-End/Módulo%201/1ª%20Semana/Práticas%20Sugeridas%20da%20Aula%2006)|
 |[- Aula 07: Criação de Imagens SVG usando HTML](https://github.com/aylmerbolzan/Reprograme-se/tree/master/Front-End/Módulo%201/1ª%20Semana/Práticas%20Sugeridas%20da%20Aula%2007)|
 |[- Trabalho Prático da 1ª Semana](https://github.com/aylmerbolzan/Reprograme-se/tree/master/Front-End/Módulo%201/1ª%20Semana/Trabalho%20Prático%20da%201ª%20Semana)|
+
+</center>
