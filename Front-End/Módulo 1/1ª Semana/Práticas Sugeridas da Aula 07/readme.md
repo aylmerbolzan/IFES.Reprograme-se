@@ -10,7 +10,7 @@ Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os eleme
 
 <center>
 
-![Resultado](./img/image01.png)
+![Imagem 01](./img/image01.png)
 
 </center>
 
@@ -20,7 +20,7 @@ Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os eleme
 
 <center>
 
-![Resultado](./img/image02.png)
+![Imagem 02](./img/image02.png)
 
 </center>
 
@@ -28,7 +28,7 @@ Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra os eleme
 
 <center>
 
-![Resultado](./img/image03.png)
+![Imagem 03](./img/image03.png)
 
 </center>
 
