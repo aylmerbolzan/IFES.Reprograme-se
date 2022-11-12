@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práticas Sugeridas da Aula 11 - Bootstrap</title>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Início do código - CDN Foundation -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- Início do código - CDN Foundation -->
+  </head>
+
+  <body>
+    <h1>Práticas Sugeridas da Aula 11 - Bootstrap</h1>
+
+    <table rules="all" width="400" cellpadding="10">
+      <tr>
+        <td class="destacado">
+          <h1>Envie-nos sua mensagem</h1>
+          <h2>Sua mensagem é muito importante</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <form method="get">
+            <label for="txtNome">Nome:</label>
+            <div class="input-group">
+              <div>
+                <span class="input-group-label" id="basic-addon1">@</span>
+              </div>
+
+              <input
+                type="text"
+                placeholder="Digite seu nome"
+                name="Nome"
+                id="txtNome"
+                required
+              />
+            </div>
+
+            <p>
+              <label for="txtMsg">Deixe sua mensagem:</label><br />
+              <textarea
+                rows="10"
+                name="Mensagem"
+                class="form-control"
+                id="txtMsg"
+                required
+              ></textarea>
+            </p>
+
+            <p>
+              - <strong>Aviso de Privacidade</strong><br />
+              <i>Seus dados serão enviados através de um ambiente seguro.</i>
+            </p>
+
+            <p>
+              <button type="submit" value="Enviar" class="button success">
+                Enviar
+              </button>
+            </p>
+          </form>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Início de código JS do Foundation -->
+
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+
+    <!-- Fim de código JS do Foundation -->
+  </body>
+</html>

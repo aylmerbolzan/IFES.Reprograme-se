@@ -8,16 +8,17 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Início do código - CDN Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Início do código - CDN Bootstrap -->
   </head>
 
   <body>
-    
     <h1>Práticas Sugeridas da Aula 11 - Bootstrap</h1>
 
     <table rules="all" width="400" cellpadding="10">
@@ -29,7 +30,7 @@
       </tr>
       <tr>
         <td>
-          <form method="post" action="/cliente/cadastrar">
+          <form method="get">
             <label for="txtNome">Nome:</label>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -47,12 +48,12 @@
             </div>
 
             <p>
-              <label for="txtMinibio">Deixe sua mensagem:</label><br />
+              <label for="txtMsg">Deixe sua mensagem:</label><br />
               <textarea
                 rows="10"
-                name="MiniBiografia"
+                name="Mensagem"
                 class="form-control"
-                id="txtMinibio"
+                id="txtMsg"
                 required
               ></textarea>
             </p>

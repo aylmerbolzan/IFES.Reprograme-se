@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práticas Sugeridas da Aula 11 - Tailwind</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Início do código - CDN Tailwind -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fim do código - CDN Tailwind -->
+  </head>
+
+  <body>
+    <h1>Práticas Sugeridas da Aula 11 - Tailwind</h1>
+
+    <table rules="all" width="450" cellpadding="10" class="shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <tr>
+        <td class="destacado">
+          <h1>Fale com a gente!</h1>
+          <h2>Sua mensagem é muito importante</h2>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <form method="get" class="bg-white px-8 pt-6 pb-8 mb-4">
+            <label for="txtNome">Nome:</label>
+            <div class="input-group mb-3">
+
+              <input
+                type="text"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Digite seu nome"
+                name="Nome"
+                id="txtNome"
+                required
+              />
+            </div>
+
+            <p>
+              <label for="txtMsg">Deixe sua mensagem:</label><br />
+              <textarea
+                id="txtMsg"
+                rows="10"
+                name="Mensagem"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                required
+              ></textarea>
+            </p>
+
+            <p>
+              - <strong>Aviso de Privacidade</strong><br />
+              <i>Seus dados serão enviados através de um ambiente seguro.</i>
+            </p><br>
+
+            <p>
+              <button
+                type="submit"
+                value="Enviar"
+                class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              >
+                Enviar
+              </button>
+            </p>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
