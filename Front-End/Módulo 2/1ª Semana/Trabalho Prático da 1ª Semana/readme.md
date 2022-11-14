@@ -1,7 +1,5 @@
 # Módulo II - 1ª Semana: Bootstrap 5
 
-***
-
 <center>
 
 | Links das Aulas e Atividade |
