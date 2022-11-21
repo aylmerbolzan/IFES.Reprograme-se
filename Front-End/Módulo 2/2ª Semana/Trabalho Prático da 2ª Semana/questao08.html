@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 08</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 08</h1>
+      <p class="lead">
+        Usando classes do Bootstrap 5, crie um leiaute de página responsivo com
+        duas regiões com as seguintes características:
+      </p>
+      <ul class="lead">
+        <li>A primeira região deve conter o título "Meu Blog";</li>
+        <li>
+          A segunda região deve conter o título "Meu Artigo" e 3 parágrafos com
+          100 palavras cada;
+        </li>
+        <li>
+          Até o breakpoint LG, a primeira região deve ficar no topo da página e
+          a segunda região deve vir logo abaixo, sendo que ambas devem ocupar
+          100% da largura da área de visualização;
+        </li>
+        <li>
+          No breakpoint LG ou superior, a primeira região deve ocupar 3 colunas
+          de largura e a segunda região deve ocupar 9 colunas de largura, de
+          forma que a primeira região fique à esquerda da segunda e que o
+          contêiner fique centralizado na área de visualização.
+        </li>
+      </ul>
+      <p class="lead">
+        * Envolva as regiões com um elemento DIV das classes
+        <i>container-fluid</i> e <i>contaner-lg</i> para cumprir os requisitos
+        de largura da página. A classe <i>conteiner-fluid</i> faz o contêiner
+        ocupar 100% da largura da área de visualização, enquanto a classe
+        <i>container-lg</i> faz o contêiner ocupar a largura do breakpoint LG ou
+        superior quando estiver nessa resolução e ficará centralizado na área de
+        visualização.
+      </p>
+      <hr />
+    </div>
+
+    <div class="container-fluid container-lg">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 bg-light p-3 text-center text-lg-start">
+            <p class="h4">Meu Blog</p>
+        </div>
+        <div class="col-lg-9 col-md-12">
+            <p class="display-1">Meu Artigo</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi omnis
+            officiis amet eum tempore quisquam veniam molestiae quibusdam,
+            tenetur sunt. Error laudantium quo consequatur, nisi nemo maiores
+            numquam. Obcaecati fugiat perferendis quos veniam quae quas in quod!
+            Repellat nihil iusto asperiores vel atque tenetur repudiandae,
+            consectetur sint perspiciatis assumenda voluptas illum, corrupti in
+            tempora voluptatum expedita nam ab at, ut sunt aperiam eveniet.
+            Harum molestiae illum repellendus nemo nulla facilis ipsum,
+            assumenda natus tempore rerum, ipsa quia, a vitae odio suscipit
+            voluptatem nobis dignissimos earum. Consequuntur minus perspiciatis,
+            nostrum vitae incidunt nisi, obcaecati fugit itaque veniam iure ut
+            esse. Repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi omnis
+            officiis amet eum tempore quisquam veniam molestiae quibusdam,
+            tenetur sunt. Error laudantium quo consequatur, nisi nemo maiores
+            numquam. Obcaecati fugiat perferendis quos veniam quae quas in quod!
+            Repellat nihil iusto asperiores vel atque tenetur repudiandae,
+            consectetur sint perspiciatis assumenda voluptas illum, corrupti in
+            tempora voluptatum expedita nam ab at, ut sunt aperiam eveniet.
+            Harum molestiae illum repellendus nemo nulla facilis ipsum,
+            assumenda natus tempore rerum, ipsa quia, a vitae odio suscipit
+            voluptatem nobis dignissimos earum. Consequuntur minus perspiciatis,
+            nostrum vitae incidunt nisi, obcaecati fugit itaque veniam iure ut
+            esse. Repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi omnis
+            officiis amet eum tempore quisquam veniam molestiae quibusdam,
+            tenetur sunt. Error laudantium quo consequatur, nisi nemo maiores
+            numquam. Obcaecati fugiat perferendis quos veniam quae quas in quod!
+            Repellat nihil iusto asperiores vel atque tenetur repudiandae,
+            consectetur sint perspiciatis assumenda voluptas illum, corrupti in
+            tempora voluptatum expedita nam ab at, ut sunt aperiam eveniet.
+            Harum molestiae illum repellendus nemo nulla facilis ipsum,
+            assumenda natus tempore rerum, ipsa quia, a vitae odio suscipit
+            voluptatem nobis dignissimos earum. Consequuntur minus perspiciatis,
+            nostrum vitae incidunt nisi, obcaecati fugit itaque veniam iure ut
+            esse. Repellendus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
