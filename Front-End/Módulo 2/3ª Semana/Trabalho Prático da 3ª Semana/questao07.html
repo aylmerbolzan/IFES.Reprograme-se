@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 07</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 07</h1>
+      <p class="lead">
+        Usando somente estilos baseados em classes do Bootstrap 5, crie um
+        formulário tradicional para cadastrar um cliente de uma loja virtual. O
+        formulário deve ter os seguintes campos: Nome Completo, CPF, Data de
+        Nascimento, Gênero e Endereço Completo. O formulário deve ocupar toda a
+        largura do contêiner em resolução inferior ao breakpoint LG, 8 colunas
+        em LG e 6 colunas em XL ou superior. Quando não ocupar toda a largura do
+        contêiner, o formulário deve estar centralizado na página. Ainda, na
+        resolução MD ou superior, os campos CPF, Data de Nascimento e Gênero
+        devem estar na mesma linha, e em resoluções abaixo do breakpoint LG,
+        cada campo deve ocupar uma linha inteira.
+      </p>
+      <hr />
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container col-xl-6 col-lg-8 col-md-12 border border-0 p-4 pt-3 rounded-4 shadow my-5">
+      <span class="display-6">Cadastro de Cliente</span>
+      <hr />
+      <form>
+        <div class="row">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input required type="text" id="nome" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-md-12 col-lg-3">
+            <label for="cpf" class="form-label">CPF</label>
+            <input
+              required
+              type="text"
+              id="cpf"
+              class="form-control"
+              pattern="[0-9]{8}"
+              placeholder="888.888.888-88"
+            />
+          </div>
+
+          <div class="mb-3 col-lg-4">
+            <label for="nasc" class="form-label">Data de Nascimento</label>
+            <input required type="date" id="nasc" class="form-control" />
+          </div>
+
+          <div class="mb-3 col-lg-5">
+            <label for="perfil" class="form-label">Gênero</label>
+            <select id="perfil" class="form-select">
+              <option disabled selected>Selecione um gênero...</option>
+              <option>Masculino</option>
+              <option>Feminino</option>
+              <option>Outros</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço Completo</label>
+            <textarea required id="endereco" class="form-control"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary px-4">Salvar</button>
+      </form>
+    </div>
+  </body>
+</html>

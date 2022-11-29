@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 06</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 06</h1>
+      <p class="lead">
+        Usando somente estilos baseados em classes do Bootstrap 5, faça o mesmo
+        formulário da questão 3, porém, com leiaute horizontal.
+      </p>
+      <hr />
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container col-5 border border-0 p-4 pt-3 rounded-4 shadow my-5">
+      <div class="text-center">
+        <span class="display-6">Login</span>
+      </div>
+      <hr />
+      <form>
+        <div class="mb-3 row">
+          <label for="user" class="col-form-label col-4 text-end"
+            >Usuário/E-mail</label
+          >
+          <div class="col-8 gx-2">
+            <input required type="email" id="user" class="form-control" />
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="pass" class="col-form-label col-4 text-end">Senha</label>
+          <div class="col-8 gx-2">
+            <input required type="password" id="pass" class="form-control" />
+          </div>
+        </div>
+
+        <div class="mb-3 row">
+          <label for="perfil" class="col-form-label col-4 text-end"
+            >Perfil</label
+          >
+          <div class="col-8 gx-2">
+            <select id="perfil" class="form-select">
+              <option disabled selected>Selecione um perfil...</option>
+              <option>Administrador</option>
+              <option>Gerente</option>
+              <option>Usuário</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row offset-4 col-8 mb-3 form-switch">
+          <input type="checkbox" id="lembrar" class="form-check-input" />
+          <label for="lembrar" class="form-check-label">Lembrar de mim</label>
+        </div>
+
+        <div class="offset-4 col-8">
+          <button type="submit" class="btn btn-primary px-4 mb-3">
+            Enviar
+          </button>
+        </div>
+        <div class="row offset-4 col-8">
+          <a href="#" class="row text-decoration-none">Esqueci minha senha</a>
+          <a href="#" class="row text-decoration-none">Quero me cadastrar</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
