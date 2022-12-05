@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 07</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 07</h1>
+      <p class="lead">
+        Usando exclusivamente classes do Bootstrap 5, crie 3 mensagens
+        flutuantes com as seguintes características:
+      </p>
+      <ul class="lead">
+        <li>
+          A primeira deve ser um Toast com o título "Informação" precedido por
+          um ícone qualquer do Bootstrap Icons, e com o texto "Esta é uma
+          notificação criada pelo componente Toast do Bootstrap 5.";
+        </li>
+        <li>
+          A segunda deve ser um Tooltip adicionado a um botão intitulado
+          "Posicione o Mouse Aqui". O Tooltip deve conter o texto "Esta é uma
+          dica flutuante criada pelo componente Tooltip do Bootstrap 5." e deve
+          aparecer à direita;
+        </li>
+        <li>
+          A terceira mensagem deve ser um Popover adicionado a um botão
+          intitulado "Clique Aqui". O Popover deve conter o texto "Esta é outra
+          dica flutuante criada pelo componente Popover do Bootstrap 5.", o
+          título "Informação" e deve aparecer à direita.
+        </li>
+      </ul>
+      <p class="lead">
+        * Ao fim do código, há uma tag <i>script</i> contendo o código
+        Javascript para inicilialização dos componentes de mensagens. Não apague
+        esse código, pois o funcionamento das mensagens flutuantes depende dele.
+      </p>
+      <hr />
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container py-5">
+
+      <!-- Toast -->
+      <div class="toast">
+        <div class="toast-header">
+          <i class="bi-info-circle me-1"></i> Informação
+          <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">
+          Esta é uma notificação criada pelo componente Toast do Bootstrap 5.
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Tooltip -->
+      <div
+        class="btn btn-primary"
+        data-bs-toggle="tooltip"
+        data-bs-title="Esta é uma dica flutuante criada pelo componente Tooltip do Bootstrap 5."
+        data-bs-placement="right"
+      >
+        Posicione o Mouse Aqui
+      </div>
+
+      <hr>
+
+      <!-- Popover -->
+      <div
+        class="btn btn-primary"
+        data-bs-toggle="popover"
+        data-bs-title="Informação."
+        data-bs-content="Esta é outra
+        dica flutuante criada pelo componente Popover do Bootstrap 5."
+        data-bs-placement="right"
+      >
+      Clique Aqui
+      </div>
+    </div>
+
+    <script>
+      const toastElList = document.querySelectorAll(".toast");
+      const toastList = [...toastElList].map((toastEl) => {
+        const toast = new bootstrap.Toast(toastEl, {});
+        toast.show();
+      });
+
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
+</html>

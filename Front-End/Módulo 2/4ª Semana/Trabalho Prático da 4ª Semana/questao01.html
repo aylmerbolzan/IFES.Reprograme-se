@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 01</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 01</h1>
+      <p class="lead">
+        Usando exclusivamente classes do Bootstrap 5, crie um agrupamento com 4
+        botões de cores temáticas diferentes, sendo que o último deles deve ter
+        um menu flutuante (dropdown) com 3 itens.
+      </p>
+      <hr />
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container">
+      <div class="btn-group">
+        <button class="btn btn-primary">Botão 1</button
+        ><button class="btn btn-success">Botão 2</button
+        ><button class="btn btn-warning">Botão 3</button
+        ><button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+          Botão 4
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#" class="dropdown-item">Menu Flutuante 1</a
+            ><a href="#" class="dropdown-item">Menu Flutuante 2</a
+            ><a href="#" class="dropdown-item">Menu Flutuante 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

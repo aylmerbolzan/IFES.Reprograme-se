@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 09</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 09</h1>
+      <p class="lead">
+        Usando exclusivamente classes do Bootstrap 5, crie um indicador de
+        caminho (<i>breadcrumbs</i>) contendo os itens "Principal", "Área
+        Restrita" e "Dados Pessoais", nesta ordem, tendo como separador o
+        caractere ">". Em seguida, adicione uma linha horizontal e 2 componentes
+        de carregamento (<i>spinner</i>) de dimensões 100px por 100px, sendo um
+        componente de cada tipo e de cor temática diferente.
+      </p>
+      <p class="lead">
+        Dica: use as propriedades CSS <i>width</i> e <i>height</i> para definir
+        o tamanho dos spinners.
+      </p>
+      <hr />
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container">
+
+        <!-- Breadcrumbs -->
+      <nav class="breadcrumb" style="--bs-breadcrumb-divider: ' > '">
+        <li class="breadcrumb-item"><a href="#">Principal</a></li>
+        <li class="breadcrumb-item"><a href="#">Área Restrita</a></li>
+        <li class="breadcrumb-item"><a href="#">Dados Pessoais</a></li>
+      </nav>
+
+      <hr>
+
+      <!-- Spinners -->
+
+      <div class="spinner-border text-primary" style="width: 100px; height: 100px;"></div>
+      <div class="spinner-grow text-warning" style="width: 100px; height: 100px;"></div>
+      
+    </div>
+  </body>
+</html>

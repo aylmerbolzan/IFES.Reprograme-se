@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 05</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 05</h1>
+      <p class="lead">
+        Usando exclusivamente classes do Bootstrap 5, crie uma lista agrupada
+        contendo 3 botões com os seguintes títulos: "Caixa de Entrada", "Itens
+        Arquivados" e "Lixo e Spam". Cada botão deve ter um badge posicionado à
+        direita e com um afastamento de 2 unidades para a borda direita. O
+        primeiro badge deve ser azul e conter o número 18. O segundo badge deve
+        ser verde e conter o número 241. O terceiro badge deve ser vermelho e
+        conter o número 11. Por fim, apresente uma mensagem de alerta
+        dispensável, em vermelho claro, com o texto "Sua caixa de e-mails possui
+        somente 110MB livres.".
+      </p>
+      <hr />
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container">
+      <!-- Group list -->
+      <div class="list-group py-3">
+        <button class="list-group-item list-group-item-action">
+          Caixa de Entrada
+          <span class="badge bg-primary position-absolute end-0 me-2">18</span>
+        </button>
+        <button class="list-group-item list-group-item-action">
+          Itens Arquivados <span class="badge bg-success position-absolute end-0 me-2">241</span>
+        </button>
+        <button class="list-group-item list-group-item-action">
+          Lixo e Spam <span class="badge bg-danger position-absolute end-0 me-2">11</span>
+        </button>
+      </div>
+      <!-- Alert -->
+      <div class="alert alert-danger alert-dismissible fade show">
+        <span>
+          <i class="bi-info-circle"></i> Sua caixa de e-mails possui somente
+          110MB livres.
+          <button class="btn-close" data-bs-dismiss="alert"></button>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

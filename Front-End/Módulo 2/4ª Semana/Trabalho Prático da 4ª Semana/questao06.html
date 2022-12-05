@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Questão 06</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <p><a href="index.html">Voltar ao Índice</a></p>
+      <h1 class="display-2">Questão 06</h1>
+      <p class="lead">
+        Usando exclusivamente classes do Bootstrap 5, crie um contêiner
+        responsivo contendo um carrossel de slides com 3 slides, barras
+        indicadoras dos slides e setas para avançar e retroceder os slides. Cada
+        slide deve ter um título com 5 palavras e um texto com 20 palavras. Para
+        as imagens dos slides use "https://picsum.photos/1280/420?random=N",
+        onde N deve ser substituído pelo número do slide.
+      </p>
+      <hr />
+    </div>
+    <!-- FAZER AQUI -->
+    <div class="container py-5">
+      <div class="carousel slide" data-bs-ride="carousel" id="ads">
+        <div class="carousel-indicators">
+          <button
+            class="active"
+            data-bs-target="#ads"
+            data-bs-slide-to="0"
+          ></button>
+          <button data-bs-target="#ads" data-bs-slide-to="1"></button>
+          <button data-bs-target="#ads" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/1280/420?random=1"
+              alt="Slide 1"
+              class="d-block w-100"
+            />
+
+            <div class="carousel-caption d-none d-sm-block">
+              <!-- Classe "d-block" incluído apenas a partir do breakpoint SM para que o conteúdo fique legível-->
+              <h5>Lorem ipsum dolor sit amet.</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                veniam est facilis deserunt perferendis laborum qui harum, fuga
+                esse ipsa.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1280/420?random=2"
+              alt="Slide 2"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Lorem ipsum dolor sit amet.</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                veniam est facilis deserunt perferendis laborum qui harum, fuga
+                esse ipsa.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1280/420?random=3"
+              alt="Slide 3"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Lorem ipsum dolor sit amet.</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                veniam est facilis deserunt perferendis laborum qui harum, fuga
+                esse ipsa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          data-bs-target="#ads"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-target="#ads"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
