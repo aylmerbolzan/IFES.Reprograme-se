@@ -1,10 +1,23 @@
-<meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Prático da 1ª Semana</title>
+  </head>
+  <body></body>
+  <h1>Trabalho Prático da 1ª Semana</h1>
+  <hr />
+  <script>
+    var numero1 = parseInt(prompt("Digite o primeiro número:"));
+    var numero2 = parseInt(prompt("Digite o segundo número:"));
+    var numero3 = parseInt(prompt("Digite o terceiro número:"));
 
-<script>
-  var nome = prompt("Digite aqui o seu nome:");
-  var salarioBruto = parseFloat(prompt(nome + ", digite aqui o seu salário bruto:"));
-  var ir = salarioBruto * 0.1;
-  var salarioLiquido = salarioBruto - ir;
+    var soma = numero1 + numero2 + numero3;
+    var media = Math.round(soma / 3);
 
-  document.write("Salário líquido: R$" + salarioLiquido);
-</script>
+    document.write("<h3>A soma dos valores é: " + soma + "</h3>");
+    document.write("<h3>A média dos valores é: " + media + "</h3>");
+  </script>
+</html>
