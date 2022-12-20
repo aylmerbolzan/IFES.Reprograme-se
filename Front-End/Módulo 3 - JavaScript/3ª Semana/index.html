@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho Prático da 3ª Semana</title>
+  </head>
+  <body>
+    <h1>Trabalho Prático da 3ª Semana</h1>
+    <hr />
+  </body>
+
+  <script>
+    var numPar = 0;
+    var numImp = 0;
+
+    for (var n = 1; n <= 20; n++) {
+      var numQuad = n * n;
+      // console.log(numQuad);
+      document.write(numQuad + "<br>");
+
+      if (numQuad % 2 == 0) {
+        numPar += numQuad;
+      } else {
+        numImp += numQuad;
+      }
+    }
+
+    // console.log("\n" + "A soma de quadros pares: " + numPar);
+    // console.log("A soma de quadros ímpares: " + numImp);
+    document.write("<br>" + "\n" + "A soma de quadros pares: " + numPar + "<br>");
+    document.write("A soma de quadros ímpares: " + numImp);
+  </script>
+</html>

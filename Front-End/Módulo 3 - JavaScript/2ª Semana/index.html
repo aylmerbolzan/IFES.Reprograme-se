@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabalho Prático da 2ª Semana</title>
   </head>
-  <body></body>
-  <h1>Trabalho Prático da 2ª Semana</h1>
-  <hr />
+  <body>
+    <h1>Trabalho Prático da 2ª Semana</h1>
+    <hr />
+  </body>
+
   <script>
     var idade = parseInt(prompt("Digite sua idade: "));
     var tempo = parseInt(prompt("Digite seu tempo de serviço: "));
     var salario = parseFloat(prompt("Digite seu salário: "));
 
-    if (idade >= 65 | tempo >= 30 | (idade => 60 & tempo >= 25)) {
+    if ((idade >= 65) | (tempo >= 30) | ((idade) => 60 & (tempo >= 25))) {
       document.write("Você pode se aposentar!<br>");
 
       if (tempo <= 20) {
@@ -23,16 +25,19 @@
         if (salarioAposentadoria < 1212) {
           salarioAposentadoria = 1212;
           document.write(
-            "Seu salário de aposentado será: R$" + salarioAposentadoria.toFixed(2).replace(".", ",")
+            "Seu salário de aposentado será: R$" +
+              salarioAposentadoria.toFixed(2).replace(".", ",")
           );
         } else if (salarioAposentadoria > 7087.22) {
           salarioAposentadoria = 7087.22;
           document.write(
-            "Seu salário de aposentado será: R$" + salarioAposentadoria.toFixed(2).replace(".", ",")
+            "Seu salário de aposentado será: R$" +
+              salarioAposentadoria.toFixed(2).replace(".", ",")
           );
         } else {
           document.write(
-            "Seu salário de aposentado será: R$" + salarioAposentadoria.toFixed(2).replace(".", ",")
+            "Seu salário de aposentado será: R$" +
+              salarioAposentadoria.toFixed(2).replace(".", ",")
           );
         }
       } else {
@@ -40,16 +45,19 @@
         if (salarioAposentadoria < 1212) {
           salarioAposentadoria = 1212;
           document.write(
-            "Seu salário de aposentado será: R$" + salarioAposentadoria.toFixed(2).replace(".", ",")
+            "Seu salário de aposentado será: R$" +
+              salarioAposentadoria.toFixed(2).replace(".", ",")
           );
         } else if (salarioAposentadoria > 7087.22) {
           salarioAposentadoria = 7087.22;
           document.write(
-            "Seu salário de aposentado será: R$" + salarioAposentadoria.toFixed(2).replace(".", ",")
+            "Seu salário de aposentado será: R$" +
+              salarioAposentadoria.toFixed(2).replace(".", ",")
           );
         } else {
           document.write(
-            "Seu salário de aposentado será: R$" + salarioAposentadoria.toFixed(2).replace(".", ",")
+            "Seu salário de aposentado será: R$" +
+              salarioAposentadoria.toFixed(2).replace(".", ",")
           );
         }
       }
