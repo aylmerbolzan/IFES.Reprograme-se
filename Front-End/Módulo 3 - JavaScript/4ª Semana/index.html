@@ -11,13 +11,33 @@
     <hr />
   </body>
   <script>
-    var nomes = [];
-    nomes.push("Roberto");
-    nomes.push("Daniel");
-    nomes.push("Carlos");
-    nomes.pop();
-    nomes.sort();
+    alturas = [];
 
-    console.log(nomes);
+    // Implementar a entrada de dados
+
+    var q = prompt("Quantos alunos deseja calcular? ");
+
+    for (i = 0; i < q; i++) {
+      var a = parseFloat(prompt("Digite a altura do Aluno 0: "));
+      alturas.push(a);
+      console.log("O Aluno " + i + " mede: " + a);
+    }
+
+    // Implementar o processamento de dados
+    // Fazer for dentro de for
+
+    for (var i = 0; i < alturas.length; i++) {
+      var contagem = 0;
+
+      for (var j = 0; j < alturas.length; j++) {
+        if (alturas[j] < alturas[i]) {
+          contagem++;
+        }
+      }
+
+      // Implementar a saída de dados
+
+      console.log("O Aluno " + i + " é maior que " + contagem + " alunos.");
+    }
   </script>
 </html>
