@@ -17,10 +17,12 @@
 
     var q = prompt("Quantos alunos deseja calcular? ");
 
+    console.log("");
+
     for (i = 0; i < q; i++) {
-      var a = parseFloat(prompt("Digite a altura do Aluno 0: "));
+      var a = parseFloat(prompt("Digite a altura do Aluno " + i + ": "));
       alturas.push(a);
-      console.log("O Aluno " + i + " mede: " + a);
+      console.log("Altura do Aluno " + i + " definida em: " + a + "\n");
     }
 
     // Implementar o processamento de dados
@@ -37,7 +39,9 @@
 
       // Implementar a saída de dados
 
-      console.log("O Aluno " + i + " é maior que " + contagem + " alunos.");
+      console.log(
+        "\n O Aluno " + i + " é maior que " + contagem + " aluno(s)."
+      );
     }
   </script>
 </html>
