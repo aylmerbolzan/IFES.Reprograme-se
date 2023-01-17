@@ -23,39 +23,36 @@
 
       var opcao = prompt("Digite sua opção: ");
 
-      // Configurar variável 'código' para ser chumbada, onde vai retornar a listagem total de elementos no array + 2 - pois começa do 0
-
       if (opcao == 1) {
         console.log("\n\nInserindo Escova de Dente...\n");
-        let sku = parseInt(prompt("Digite o SKU: "));
-        let tamanho = prompt("Adulto ou Infantil? ");
+        let sku = "ED" + (array_escovas.length + 1 + "-BR");
+        console.log("Cadastrando Escova de Dentes: " + sku);
+
+        let tamanho = prompt("Tamanho da escova (Adulto ou Infantil): ");
         let cor = prompt("Cor das Cerdas: ");
-        let acabamento = prompt("Acabamento Quadrado ou Arredondado? ");
-        let personalizada = prompt("Modelo Básico ou Personalziado? ");
-        let estampada = prompt("Estampada ou Lisa: ");
+        let acabamento = prompt("Acabamento (Quadrado ou Arredondado): ");
+        let personalizada = prompt("Modelo (Básico ou Personalziado): ");
+        let estampada = prompt("Estampa (Estampada ou Lisa): ");
         let estoque = parseInt(prompt("Quantidade em Estoque: "));
-        let preco = prompt("Digite o preço: ");
+        let preco = prompt("Preço de Venda: ");
 
         const escova = {
-          sku: sku,
-          tamanho: tamanho,
-          cor: cor,
-          acabamento: acabamento,
-          personalizada: personalizada,
-          estampada: estampada,
-          estoque: estoque,
-          preco: preco,
+          Sku: sku,
+          Tamanho: tamanho,
+          Cor: cor,
+          Acabamento: acabamento,
+          Personalização: personalizada,
+          Estampa: estampada,
+          Estoque: estoque,
+          Preço: preco,
         };
-        // Chamar a função inserir
         inserir_escova(escova);
       } else if (opcao == 2) {
         console.log("\n\nExcluindo Escova de Dentes...\n");
         let sku = prompt("Digite o SKU que deseja excluir: ");
-        // Chamar a função excluir
         excluir_escova(sku);
       } else if (opcao == 3) {
         console.log("\n\nListando Escovas de Dentes...\n");
-        // Chamar a função listar
         listar_escova();
       } else {
         console.log("\n\nSaindo do programa...\n");
@@ -65,18 +62,14 @@
       console.clear();
     } while (opcao != 0);
 
-    // EDITAR AQUI
     function inserir_escova(escova) {
       array_escovas.push(escova);
     }
 
-    // EDITAR AQUI
     function excluir_escova(sku) {
-      array_escovas = array_escovas.filter((escova) => escova.sku != sku);
-      // Utilizando uma função pra remover esse elemento
+      array_escovas = array_escovas.filter((escova) => escova.Sku != sku);
     }
 
-    // EDITAR AQUI
     function listar_escova() {
       array_escovas.forEach((escova) => {
         console.log(escova);
