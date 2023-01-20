@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,10 +28,10 @@
         let sku = "ED" + (array_escovas.length + 1 + "-BR");
         console.log("Cadastrando Escova de Dentes: " + sku);
 
-        let tamanho = prompt("Tamanho da escova (Adulto ou Infantil): ");
+        let tamanho = prompt("Tamanho da Escova (Adulto ou Infantil): ");
         let cor = prompt("Cor das Cerdas: ");
         let acabamento = prompt("Acabamento (Quadrado ou Arredondado): ");
-        let personalizada = prompt("Modelo (Básico ou Personalziado): ");
+        let modelo = prompt("Modelo (Básico ou Personalizado): ");
         let estampada = prompt("Estampa (Estampada ou Lisa): ");
         let estoque = parseInt(prompt("Quantidade em Estoque: "));
         let preco = prompt("Preço de Venda: ");
@@ -41,7 +41,7 @@
           Tamanho: tamanho,
           Cor: cor,
           Acabamento: acabamento,
-          Personalização: personalizada,
+          Modelo: modelo,
           Estampa: estampada,
           Estoque: estoque,
           Preço: preco,
@@ -52,10 +52,10 @@
         let sku = prompt("Digite o SKU que deseja excluir: ");
         excluir_escova(sku);
       } else if (opcao == 3) {
-        console.log("\n\nListando Escovas de Dentes...\n");
+        console.log("\n\nListando Itens Cadastrados:\n\n");
         listar_escova();
       } else {
-        console.log("\n\nSaindo do programa...\n");
+        console.log("\n\nEncerrando o Programa...\n");
       }
 
       prompt("\nEnter para continuar...");
@@ -72,8 +72,11 @@
 
     function listar_escova() {
       array_escovas.forEach((escova) => {
-        console.log(escova);
+        let q = array_escovas.indexOf(escova)+1;
+        console.log(q + ": " + escova.Sku + " - " + escova.Tamanho + " " + escova.Modelo + " - " + escova.Acabamento + " - " + escova.Cor + " " + escova.Estampa + " - " + escova.Estoque + "uni em estoque - " + escova.Preço);
       });
     }
+
+
   </script>
 </html>
