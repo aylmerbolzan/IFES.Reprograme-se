@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.linha::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  border-radius: 10px;
+  border: solid 5px white;
+  float: left;
+  width: 50%;
+}
