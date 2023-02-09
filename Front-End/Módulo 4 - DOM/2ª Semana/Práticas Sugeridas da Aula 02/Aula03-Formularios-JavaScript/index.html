@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JavaScript - DOM - Formulários - Validação com JavaScript</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h1>Validação com JavaScript</h1>
+  <hr>
+  <form name="form1" action="#" method="GET">
+    <label for="txtNome">Nome</label>
+    <input type="text" id="txtNome" name="nome" placeholder="Fulano de Tal" required>
+    <label for="txtEmail">E-mail</label>
+    <input type="email" id="txtEmail" name="email" placeholder="fulano@email.com" required>
+    <label for="txtTelefone">Telefone</label>
+    <input type="text" id="txtTelefone" name="telefone" placeholder="(99)99999-9999" pattern="\(\d{2}\)\d{5}-\d{4}"
+      required>
+    <label for="selSexo">Sexo</label>
+    <select id="selSexo" name="sexo" required>
+      <option value="" selected>Selecione o sexo</option>
+      <option value="M">Masculino</option>
+      <option value="F">Feminino</option>
+    </select>
+    <label for="txtSenha">Senha Senha</label>
+    <input type="password" id="txtSenha" name="senha" required>
+    <label for="txtConfSenha">Confirmação de Senha</label>
+    <input type="password" id="txtConfSenha" name="confSenha" required>
+    <input type="submit" class="btn" value="Enviar">
+  </form>
+
+  <script src="script.js"></script>
+  <footer><a href="../index.html">Voltar ao índice</a></footer>
+</body>
+
+</html>
