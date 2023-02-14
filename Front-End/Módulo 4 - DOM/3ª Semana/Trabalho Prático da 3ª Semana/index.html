@@ -1,0 +1,157 @@
+<!-- Adaptação do arquivo index.html (5 pontos) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>JavaScript - DOM - Prática da Semana 03</title>
+  </head>
+
+  <body class="p-3 m-0 border-0">
+    <h1 class="text-center">Cadastro de Blends de Chás</h1>
+    <hr />
+
+    <form
+      name="form1"
+      action="#"
+      method="POST"
+      class="row g-3 needs-validation"
+      novalidate
+    >
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome do Blend</label>
+        <input type="text" class="form-control" id="nome" required />
+        <div class="invalid-feedback" id="feedbackNome">Informe o nome do blend a cadastrar.</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="peso" class="form-label">Peso</label>
+        <div class="input-group mb-3">
+          <input
+            type="number"
+            min="25"
+            class="form-control"
+            id="peso"
+            step="25"
+            required
+          />
+          <div class="input-group-append">
+            <span class="input-group-text">gramas</span>
+          </div>
+          <div class="invalid-feedback">
+            Preencha o peso corretamente com múltiplos de 25g.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="custo" class="form-label">Preço de Custo</label>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">R$</span>
+
+          <input
+            type="number"
+            min="0"
+            class="form-control"
+            id="custo"
+            oninput="validarNumero(this)"
+            required
+          />
+
+          <span class="input-group-text">,00</span>
+
+          
+          
+          <div id="custoFeedback" class="invalid-feedback">
+            Preencha o valor de custo corretamente.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="venda" class="form-label">Preço de Venda</label>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">R$</span>
+
+          <input
+            type="number"
+            min="0"
+            class="form-control"
+            id="venda"
+            oninput="validarNumero(this)"
+            required
+          />
+
+          <span class="input-group-text">,00</span>
+
+          
+          
+          <div id="vendaFeedback" class="invalid-feedback">
+            Preencha o valor de venda corretamente.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="estado" class="form-label">Estado das Ervas</label>
+        <select id="estado" class="form-select" required>
+          <option value="" disabled selected>Selecione o estado das ervas</option>
+          <option value="Fresca">Fresca</option>
+          <option value="Desidratada">Desidratada</option>
+        </select>
+        <div class="invalid-feedback">Informe o estado das ervas.</div>
+      </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="producao" class="form-label">Modo de Produção</label>
+        <select id="producao" class="form-select" required>
+          <option value="" disabled selected>Selecione o modo de produção</option>
+          <option value="Industrializado">Industrializado</option>
+          <option value="Artesanal">Artesanal</option>
+        </select>
+        <div class="invalid-feedback">Informe o modo de produção.</div>
+      </div>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <input
+          type="submit"
+          class="btn btn-primary me-md-2"
+          value="Inserir"
+          id="btnInserir"
+        />
+      </div>
+    </form>
+
+    <hr />
+
+    <table class="table table-striped" id="tabela">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Blend</th>
+          <th scope="col">Peso</th>
+          <th scope="col">Custo</th>
+          <th scope="col">Venda</th>
+          <th scope="col">Estado</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">Celular</th>
+          <th scope="col">Ação</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
