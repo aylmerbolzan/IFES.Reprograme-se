@@ -1,3 +1,5 @@
+// Validador Bootstrap
+
 (function () {
   "use strict";
 
@@ -22,12 +24,16 @@
   });
 })();
 
+// Função para ler os dados do localStorage
+
 function getLocalStorage() {
-  return JSON.parse(localStorage.getItem("bd_clientes")) ?? [];
+  return JSON.parse(localStorage.getItem("bd_chas")) ?? [];
 }
 
-function setLocalStorage(bd_clientes) {
-  localStorage.setItem("bd_clientes", JSON.stringify(bd_clientes));
+// Função para armazenar os dados no localStorage
+
+function setLocalStorage(bd_chas) {
+  localStorage.setItem("bd_chas", JSON.stringify(bd_chas));
 }
 
 function limparTabela() {
@@ -40,21 +46,20 @@ function limparTabela() {
 function atualizarTabela() {
   // Adaptação da função atualizarTabela (5 pontos)
   limparTabela();
-  const bd_clientes = getLocalStorage();
+  const bd_chas = getLocalStorage();
   let index = 0;
-  for (cliente of bd_clientes) {
+  for (blends of bd_chas) {
     const novaLinha = document.createElement("tr");
     novaLinha.innerHTML = `
         <th scope="row">${index + 1}</th>
-        <td>${cliente.nome}</td>
-        <td>${cliente.peso}</td>
-        <td>${cliente.custo}</td>
-        <td>${cliente.venda}</td>
-        <td>${cliente.estado}</td>
-        <td>${cliente.email}</td>
-        <td>${cliente.celular}</td>
+        <td>${blends.nome}</td>
+        <td>${blends.peso}</td>
+        <td>${blends.custo}</td>
+        <td>${blends.venda}</td>
+        <td>${blends.estado}</td>
+        <td>${blends.producao}</td>
         <td>
-            <button type="button" class="btn btn-danger" id="${index}" onclick="excluir(${index})">Excluir</button>
+            <button type="button" class="btn btn-danger btn-sm" id="${index}" onclick="excluir(${index})">Excluir</button>
         </td>
     `;
     document.querySelector("#tabela>tbody").appendChild(novaLinha);
@@ -64,34 +69,34 @@ function atualizarTabela() {
 
 function inserir() {
   // Adaptação da função inserir (10 pontos)
-  const cliente = {
+  const blends = {
     nome: document.getElementById("nome").value,
     peso: document.getElementById("peso").value + "g",
     custo: "R$" + document.getElementById("custo").value + ",00",
     venda: "R$" + document.getElementById("venda").value + ",00",
     estado: document.getElementById("estado").value,
-    email: document.getElementById("email").value,
-    celular: document.getElementById("celular").value,
+    producao: document.getElementById("producao").value,
   };
-  const bd_clientes = getLocalStorage();
-  bd_clientes.push(cliente);
-  setLocalStorage(bd_clientes);
+
+  const bd_chas = getLocalStorage();
+  bd_chas.push(blends);
+  setLocalStorage(bd_chas);
   atualizarTabela();
 }
 
 function excluir(index) {
   // Adaptação da função excluir (5 pontos)
-  const bd_clientes = getLocalStorage();
-  bd_clientes.splice(index, 1);
-  setLocalStorage(bd_clientes);
+  const bd_chas = getLocalStorage();
+  bd_chas.splice(index, 1);
+  setLocalStorage(bd_chas);
   atualizarTabela();
 }
 
-function validarCelular() {
+function validarBlend() {
   // Adaptação da função validar (10 pontos)
-  const bd_clientes = getLocalStorage();
-  for (cliente of bd_clientes) {
-    if (nome.value == cliente.nome) {
+  const bd_chas = getLocalStorage();
+  for (blends of bd_chas) {
+    if (nome.value == blends.nome) {
       nome.setCustomValidity("Este blend já está cadastrado!");
       feedbackNome.innerText = "Este blend já está cadastrado!";
       return false;
@@ -105,9 +110,11 @@ function validarCelular() {
 
 atualizarTabela();
 // Seleção dos elementos e adição do listener para validação customizada (5 pontos)
-const nome = document.getElementById("celular");
-const feedbackNome = document.getElementById("feedbackCelular");
-nome.addEventListener("input", validarCelular);
+const nome = document.getElementById("nome");
+const feedbackNome = document.getElementById("feedbackNome");
+nome.addEventListener("input", validarBlend);
+
+// Validador para números inteiros em Custo e Venda
 
 function validarNumero(input) {
   const regex = /^[0-9]*$/;
@@ -116,7 +123,7 @@ function validarNumero(input) {
   }
 }
 
-//  Validação para 
+//  Validador para checar se o valor de venda foi preenchido maior que o valor de custo
 
 const valorVenda = document.getElementById("venda");
 const valorCusto = document.getElementById("custo");
@@ -128,7 +135,9 @@ function validarLucro() {
   const venda = parseFloat(valorVenda.value);
   const custo = parseFloat(valorCusto.value);
   if (venda < custo) {
-    valorVenda.setCustomValidity("O custo não pode ser maior que o valor de venda");
+    valorVenda.setCustomValidity(
+      "O custo não pode ser maior que o valor de venda"
+    );
     vendaFeedback.innerText = "O custo não pode ser maior que o valor de venda";
     return false;
   } else {
@@ -137,4 +146,19 @@ function validarLucro() {
   }
 
   return true;
+}
+
+//  Função darkmode
+
+let darkMode = false;
+
+function toggleTheme() {
+  const body = document.querySelector("body");
+  if (darkMode) {
+    body.setAttribute("data-bs-theme", "light");
+    darkMode = false;
+  } else {
+    body.setAttribute("data-bs-theme", "dark");
+    darkMode = true;
+  }
 }
