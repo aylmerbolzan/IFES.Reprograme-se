@@ -1,0 +1,14 @@
+{
+  "name": "praticas-sugeridas-da-aula-04",
+  "version": "1.0.0",
+  "description": "Este é um projeto de testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aylmer Bolzan",
+  "license": "ISC",
+  "dependencies": {
+    "html-pdf": "^3.0.1"
+  }
+}
