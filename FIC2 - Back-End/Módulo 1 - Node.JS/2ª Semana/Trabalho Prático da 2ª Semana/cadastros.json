@@ -1,0 +1,83 @@
+{
+  "cadastros": [
+    {
+      "nome": "Aylmer Bolzan Chicutti",
+      "endereco": "Domingos Martins/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "31 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Roney Goncalves Gomes",
+      "endereco": "Vila Velha/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "28 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Benízio Lázaro Júnior",
+      "endereco": "Domingos Martins/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "27 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Denisson Cavalcante Barros de Castro",
+      "endereco": "Domingos Martins/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "35 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Fabiano Luiz Novelli",
+      "endereco": "Domingos Martins/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "32 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Daniel Monteiro Cupertino de Castro",
+      "endereco": "Domingos Martins/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "29 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Wallace Machado dos Santos Melo",
+      "endereco": "Domingos Martins/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "34 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Cassiano Sopeletto Toneto",
+      "endereco": "Cariacica/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "36 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Samuel Xavier de Souza",
+      "endereco": "Vitória/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "33 anos",
+      "sexo": "Masculino"
+    },
+
+    {
+      "nome": "Matheus Ramos dos Santos",
+      "endereco": "Viana/ES",
+      "nacionalidade": "Brasileiro",
+      "idade": "30 anos",
+      "sexo": "Masculino"
+    }
+  ]
+}
