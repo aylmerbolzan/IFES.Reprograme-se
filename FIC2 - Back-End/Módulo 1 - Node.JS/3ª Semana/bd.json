@@ -1,0 +1,32 @@
+{
+  "carros": [
+    {
+      "Montadora": "Citroen",
+      "Modelo": "C3",
+      "Placa": "ABC-1234",
+      "Ano": "2005",
+      "Cor": "Preto"
+    },
+    {
+      "Montadora": "Volkswagem",
+      "Modelo": "Gol",
+      "Placa": "DEF-5678",
+      "Ano": "2003",
+      "Cor": "Prata"
+    },
+    {
+      "Montadora": "Honda",
+      "Modelo": "Civic",
+      "Placa": "GHI-9101",
+      "Ano": "2018",
+      "Cor": "Vermelho"
+    },
+    {
+      "Montadora": "Fiat",
+      "Modelo": "Uno",
+      "Placa": "JKL-1121",
+      "Ano": "1997",
+      "Cor": "Vinho"
+    }
+  ]
+}
