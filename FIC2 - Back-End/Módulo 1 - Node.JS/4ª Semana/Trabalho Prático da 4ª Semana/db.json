@@ -1,0 +1,29 @@
+{
+  "tarefas": [
+    {
+      "id": "02",
+      "descricao": "Estudar JAVA",
+      "status": "Pendente"
+    },
+    {
+      "id": "03",
+      "descricao": "Estudar Angular",
+      "status": "Pendente"
+    },
+    {
+      "id": "09",
+      "descricao": "Estudar React Native",
+      "status": "Concluído"
+    },
+    {
+      "id": "04",
+      "descricao": "Estudar Python",
+      "status": "Pendente"
+    },
+    {
+      "id": "01",
+      "descricao": "Estudar PHP",
+      "status": "Pendente"
+    }
+  ]
+}
