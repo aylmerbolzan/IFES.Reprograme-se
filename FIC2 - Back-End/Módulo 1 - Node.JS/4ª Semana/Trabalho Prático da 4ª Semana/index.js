@@ -8,7 +8,6 @@ server.use(router);
 server.listen(3000, () => {});
 
 const axios = require("./api.js");
-const fs = require("fs");
 const prompt = require("prompt-sync")();
 const logo =
   ".____________________.\n|                    |\n|   ~ TaskMaster ~   |\n|  .To Do List App.  |\n|____________________|\n\n";
@@ -90,45 +89,29 @@ async function deletarTarefa() {
   }
 }
 
-// Leitura do JSON com tarefass
-function listarTarefas() {
-  return new Promise((resolve, reject) => {
-    fs.readFile("db.json", "utf-8", (erro, data) => {
-      if (erro) {
-        reject(erro);
-      }
-      resolve(data);
-    });
-  });
-}
-
 // 5 - Listar tarefas pendentes;
 async function listarTarefasPendentes() {
-  const tarefas = await listarTarefas();
-  const lerTarefas = JSON.parse(tarefas).tarefas;
-  const tarefasPendentes = lerTarefas.filter(
-    (tarefa) => tarefa.status === "Pendente"
+  var response = await axios.api.get('/tarefas');
+  var lista = response.data.filter((item) => item.status === "Pendente"
   );
-  console.table(tarefasPendentes);
+  console.table(lista);
   console.log("\n");
 }
 
 // 6 - Listar tarefas concluídas;
 async function listarTarefasConcluidas() {
-  const tarefas = await listarTarefas();
-  const lerTarefas = JSON.parse(tarefas).tarefas;
-  const tarefasConcluidas = lerTarefas.filter(
-    (tarefa) => tarefa.status === "Concluído"
+  var response = await axios.api.get('/tarefas');
+  var lista = response.data.filter((item) => item.status === "Concluído"
   );
-  console.table(tarefasConcluidas);
+  console.table(lista);
   console.log("\n");
 }
 
 // 7 - Listar tarefas concluídas;
 async function listarTodasTarefas() {
-  const tarefas = await listarTarefas();
-  const lerTarefas = JSON.parse(tarefas).tarefas;
-  console.table(lerTarefas);
+  var response = await axios.api.get('/tarefas');
+  var lista = response.data;
+  console.table(lista);
   console.log("\n");
 }
 
