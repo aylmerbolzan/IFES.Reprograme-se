@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Início | SALVIA - Cosméticos Naturais</title>
+  </head>
+  <body>
+    <a href="#head-title"
+      ><img
+        src="https://images.tcdn.com.br/img/img_prod/780462/1675361521_imagem_2023-02-02_151052404.png"
+        style="width: 100%"
+        alt="banner"
+    /></a>
+    <div class="container">
+      <h1 id="head-title" class="display-6 pt-5">Envio de Documentos</h1>
+      <span
+        >Olá! Obrigado por entrar em contato conosco. Para podermos ajudá-lo
+        melhor, precisamos que você faça o upload de um arquivo contendo mais
+        detalhes sobre sua solicitação. Por favor, escolha o arquivo que você
+        deseja enviar clicando no botão "Escolher arquivo" abaixo e, em seguida,
+        clique em "Enviar arquivo". Certifique-se de que o arquivo esteja em um
+        formato legível e não exceda o tamanho máximo permitido. Assim que
+        recebermos seu arquivo, entraremos em contato com você o mais breve
+        possível. Agradecemos sua colaboração e aguardamos seu envio.
+      </span>
+      <div class="container py-5 d-flex gap-3 flex-column flex-lg-row">
+        <div class="card col-12 pt-3 m-auto shadow">
+          <div class="card-body">
+            <h5 class="card-title">Upload de Arquivos</h5>
+
+            <p class="card-text fst-italic pt-3 fs-6">
+              <span
+                >O arquivo que você deseja enviar deve conter informações
+                relevantes e precisas sobre sua solicitação. Certifique-se de
+                que o arquivo esteja em um formato legível, como PDF, Word ou
+                Excel e não exceda o tamanho de 2mbs.</span
+              >
+            </p>
+            <div id="upload">
+              <form
+                class="input-group mb-3"
+                action="enviodearquivo"
+                method="post"
+                enctype="multipart/form-data"
+              >
+                <input
+                  type="file"
+                  name="fileupload"
+                  class="form-control"
+                  id="inputGroupFile02"
+                />
+
+                <input
+                  type="submit"
+                  class="btn btn-info text-white"
+                  value="Enviar arquivo"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
