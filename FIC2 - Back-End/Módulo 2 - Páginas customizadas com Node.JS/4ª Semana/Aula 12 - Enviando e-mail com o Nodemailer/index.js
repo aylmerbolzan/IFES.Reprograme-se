@@ -16,7 +16,7 @@ app.get("/sendmail", async (req, res) => {
       pass: "e3c4437e6efd52",
     },
   });
-
+  
   var message = {
     from: "aylmer.bolzan@gmail.com",
     to: "aylmerbolzan@gmail.com",
