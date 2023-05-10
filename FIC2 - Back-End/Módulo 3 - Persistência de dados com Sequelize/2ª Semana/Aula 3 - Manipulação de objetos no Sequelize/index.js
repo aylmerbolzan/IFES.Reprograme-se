@@ -147,13 +147,19 @@ class Funcionario extends Model {
     nascimento: "2020-12-01",
     telefone: "07280921",
   });
-  });
 
-  const funcionario_create1 = await Funcionario.create({
+  const funcionario_create2 = await Funcionario.create({
     idsetor: 2,
     nome: "Oto",
-    nascimento: "1987-12-01",
-    telefone: "07280921",
+    nascimento: "1987-02-07",
+    telefone: "06924324",
+  });
+
+  const funcionario_create3 = await Funcionario.create({
+    idsetor: 3,
+    nome: "Carina",
+    nascimento: "1990-09-09",
+    telefone: "02932176",
   });
 
   const funcionarios_listar = await Funcionario.findAll();
