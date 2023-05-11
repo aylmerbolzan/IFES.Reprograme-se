@@ -1,5 +1,4 @@
 // Importando as biliotecas
-const { triggerAsyncId } = require("async_hooks");
 const { Sequelize, Model, DataTypes } = require("sequelize");
 
 //Abrindo conexão com o Banco de dados ou criando um novo caso não exista
@@ -68,10 +67,13 @@ class Funcionario extends Model {
           type: DataTypes.STRING(15),
         },
       },
-      { sequelize, ModelName: "funcionario", tableName: "funcionarios" }
+      { sequelize, modelName: "funcionario", tableName: "funcionarios" }
     );
   }
 }
+
+Funcionario.init(sequelize);
+
 
 // Sincronismo
 
@@ -163,9 +165,9 @@ class Funcionario extends Model {
   });
 
   const funcionarios_listar = await Funcionario.findAll();
+  
   console.log(
     "Lista de Setores Atualizada: \n",
     JSON.stringify(funcionarios_listar, null, 2),
-    "\n\n"
-  );
+    "\n\n");
 })();
