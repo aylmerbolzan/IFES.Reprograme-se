@@ -19,35 +19,18 @@ alpha3/dist/js/bootstrap.bundle.min.js"
 ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <title>Cadastro de Clientes</title>
+    <title>Cadastro de Fornecedor</title>
   </head>
   <body>
     <center>
-      <h4><p>Cadastro de Clientes</p></h4>
+      <h4><p>Cadastro de Fornecedor</p></h4>
     </center>
 
-    <form action="/addcliente" method="POST">
+    <form action="/addfornecedor" method="POST">
       <div class="row justify-content-center">
         <div class="col-8">
-          <label for="nome2" class="form-label">Nome:</label>
+          <label for="nome" class="form-label">Nome:</label>
           <input type="text" name="nome" class="form-control" id="nome" />
-        </div>
-        <div class="col-8">
-          <label for="nascimento" class="form-label">Data de nascimento</label>
-          <input
-            type="text"
-            name="nascimento"
-            class="form-control"
-            id="nascimento"
-            aria-describedby="nascimentoHelp"
-          />
-          <small id="nascimentoHelp" class="form-text text-muted"
-            >Por favor, preencha a data no formato AAAA-MM-DD</small
-          >
-        </div>
-        <div class="col-8">
-          <label for="cidade" class="form-label">Cidade:</label>
-          <input type="text" name="cidade" class="form-control" id="cidade" />
         </div>
         <div class="col-8">
           <label for="telefone" class="form-label">Telefone:</label>
@@ -57,6 +40,10 @@ ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             class="form-control"
             id="telefone"
           />
+        </div>
+        <div class="col-8">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" name="email" class="form-control" id="email" />
         </div>
         <div class="col-8">
           <button type="submit" class="btn btn-primary">Cadastrar</button>
