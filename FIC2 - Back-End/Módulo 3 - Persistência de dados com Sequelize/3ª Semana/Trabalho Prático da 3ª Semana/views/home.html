@@ -14,7 +14,6 @@
     <title>SupplierMaster - Gestão de Cadastros</title>
     <style>
       h1,
-      h2,
       h5 {
         text-align: center;
       }
@@ -64,19 +63,6 @@
       .bi {
         font-size: xx-large;
       }
-
-      .close {
-        margin: 1em 0 0 1.5em;
-        font-size: 0.8em;
-      }
-
-      label {
-        margin-top: 1em;
-      }
-
-      .space {
-        padding-left: 12em;
-      }
     </style>
   </head>
 
@@ -85,50 +71,23 @@
       <div class="main">
         <h1>SupplierMaster</h1>
         <h5>Gestão de Cadastros</h5>
-        <hr />
-        <h2>Cadastrar Fornecedor</h2>
         <div class="row mt-4">
-          <form action="/addfornecedor" method="POST">
-            <div class="row justify-content-center">
-              <div class="col-8">
-                <label for="nome" class="form-label">Nome:</label>
-                <input
-                  type="text"
-                  name="nome"
-                  class="form-control"
-                  id="nome"
-                  required
-                />
-              </div>
-              <div class="col-8">
-                <label for="telefone" class="form-label">Telefone:</label>
-                <input
-                  type="text"
-                  name="telefone"
-                  class="form-control"
-                  id="telefone"
-                  required
-                />
-              </div>
-              <div class="col-8">
-                <label for="email" class="form-label">Email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  id="email"
-                  required
-                />
-              </div>
-              <div class="space col-8"></div>
-              <div class="col-8">
-                <button type="submit" class="button">Cadastrar</button>
-              </div>
-            </div>
-          </form>
-          <a href="/">
-            <button class="close"><i class="bi bi-backspace-fill"></i></button>
-          </a>
+          <div class="col-md-6">
+            <a href="/cadfornecedor">
+              <button class="button btn btn-block">
+                <i class="bi bi-inboxes"></i>
+                Cadastrar Fornecedor
+              </button></a
+            >
+          </div>
+          <div class="col-md-6">
+            <a href="/cadcliente">
+              <button class="button btn btn-block">
+                <i class="bi bi-bag-check"></i>
+                Cadastrar Cliente
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
