@@ -2,7 +2,7 @@
 const database = require('./db/db');
 const express = require('express');
 const app = express();
-const Video = require('./models/Video');
+
 
 //Sincronismo do banco de dados
 try {
