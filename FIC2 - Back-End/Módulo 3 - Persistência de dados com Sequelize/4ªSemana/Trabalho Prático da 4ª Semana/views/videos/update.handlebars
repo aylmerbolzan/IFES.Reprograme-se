@@ -1,9 +1,9 @@
-<h1 class="text-center my-3">Atualizar Video: {{video.titulo}}</h1>
+<h1 class="text-center my-3">Atualizar Filme: {{video.titulo}}</h1>
 <form action="/update" method="POST">
  <input type="hidden" name="id_filme_tipo" value="{{video.id_filme_tipo}}" />
  <div class="row w-50 d-block m-auto g-3">
  <div class="col-12">
- <label class="form-label" for="titulo">Titulo:</label>
+ <label class="form-label" for="titulo">Título:</label>
  <input
  class="form-control"
  type="titulo"
@@ -28,7 +28,7 @@
  class="form-control"
  name="genero"
  id="genero"
- >{{video.genero}}</input>
+value="{{video.genero}}">
  </div>
 
  <div class="col-12">
