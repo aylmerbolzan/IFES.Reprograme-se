@@ -8,8 +8,8 @@ app.set("view engine", "html");
 app.engine("handlebars", hand.engine());
 app.set("view engine", "handlebars");
 
-app.use("/", Route);
 app.use(express.urlencoded({ extended: true }));
+app.use("/", Route);
 
 app.listen(porta, () => {
   console.log("Servidor rodando na porta 3000");

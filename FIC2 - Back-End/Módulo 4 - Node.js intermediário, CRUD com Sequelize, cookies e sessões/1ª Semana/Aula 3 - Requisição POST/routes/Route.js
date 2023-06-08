@@ -31,9 +31,13 @@ router.get("/cidades/:id", (req, res) => {
 });
 
 router.post("/cidades/", (req, res) => {
-let nome = req.body.nome;
-cidades[(cidades.length)] = nome;
-return res.json([cidades[(cidades.length - 1)]]);
-})
+  let nome = req.body.nome;
+  cidades[(cidades.length)] = nome;
+  return res.json([cidades[cidades.length - 1]]);
+});
+
+router.get("/cidades", (req, res) => {
+  res.render("form");
+});
 
 module.exports = router;
