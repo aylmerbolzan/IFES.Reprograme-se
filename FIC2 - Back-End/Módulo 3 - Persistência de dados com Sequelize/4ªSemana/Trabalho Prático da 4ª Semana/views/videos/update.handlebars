@@ -1,0 +1,49 @@
+<h1 class="text-center my-3">Atualizar Video: {{video.titulo}}</h1>
+<form action="/update" method="POST">
+ <input type="hidden" name="id_filme_tipo" value="{{video.id_filme_tipo}}" />
+ <div class="row w-50 d-block m-auto g-3">
+ <div class="col-12">
+ <label class="form-label" for="titulo">Titulo:</label>
+ <input
+ class="form-control"
+ type="titulo"
+ name="titulo"
+ id="titulo"
+ value="{{video.titulo}}"
+ />
+ </div>
+  <div class="col-12">
+ <label class="form-label" for="categoria">Categoria:</label>
+ <input
+ class="form-control"
+ type="categoria"
+ name="categoria"
+ id="categoria"
+ value="{{video.categoria}}"
+ />
+ </div>
+ <div class="col-12">
+ <label class="form-label" for="genero">Gênero:</label>
+ <input
+ class="form-control"
+ name="genero"
+ id="genero"
+ >{{video.genero}}</input>
+ </div>
+
+ <div class="col-12">
+ <label class="form-label" for="link_sinopse">Link do Filme:</label>
+ <input
+ class="form-control"
+ type="link_sinopse"
+ name="link_sinopse"
+ id="link_sinopse"
+ value="{{video.link_sinopse}}"
+ />
+ </div>
+ <div>
+ <input class="btn btn-primary my-3" type="submit" value="Atualizar Filme"
+/>
+ </div>
+ </div>
+</form>

@@ -1,0 +1,35 @@
+<h1 class="text-center my-3">Lista de Todos os Filmes Preferidos</h1>
+<table class="table">
+ <div class="row">
+ <div class="col-12">
+ <thead>
+ <th>Código do Filme</th>
+ <th>Título</th>
+ <th>Categoria</th>
+ <th>Gênero</th>
+ <th>Link</th>
+ </thead>
+ <tbody>
+ {{#each video}}
+ <tr>
+ <th>{{this.id_filme_tipo}}</th>
+ <th>{{this.titulo}}</th>
+ <th>{{this.categoria}}</th>
+ <th>{{this.genero}}</th>
+ <th><div class="embed-responsive embed-responsive-16by9">
+ <iframe width="150" height="110" class="embed-responsive-item"
+src="{{this.link_sinopse}}" allowfullscreen></iframe>
+</div></th>
+ <th><a href="/update/{{this.id_filme_tipo}}">Editar<i class="bi bi-pencilsquare"></i></a></th>
+ <th> <form class="borde-0 m-0" action="/remover" method="POST">
+ <input type="hidden" name="id_filme_tipo" value={{this.id_filme_tipo}}>
+ <input type="submit" value="Excluir" name="Excluir"/>
+
+ </form></th>
+
+ </tr>
+ {{/each}}
+</tbody>
+ </div>
+ </div>
+</table>
