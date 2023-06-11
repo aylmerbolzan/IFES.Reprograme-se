@@ -4,8 +4,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const database = require("./db/db");
-const Funcionario = require("./model/funcionarioModel");
-const funcionarioController = require("./controller/funcionarioController");
+const Cliente = require("./model/clienteModel");
+const clienteController = require("./controller/clienteController");
 
 //SINCRONISMO COM O BANCO DE DADOS
 try {
@@ -20,10 +20,18 @@ app.get("/", (req, res) => {
 
 //POST - CADASTRAR
 
-app.post("/Cadastrar", funcionarioController.FuncionarioCreate);
+app.post("/Cadastrar", clienteController.ClienteCreate);
 
 //GET - LISTAR
 
-app.get("/Funcionarios", funcionarioController.FuncionarioListar);
+app.get("/Clientes", clienteController.ClienteListar);
+
+//PUT - ATUALIZAR
+
+app.put("/Clientes/:id", clienteController.ClienteUpdate);
+
+//DELETE - DELETAR
+
+app.delete("/Clientes/:id", clienteController.ClienteDelete);
 
 app.listen(3000);

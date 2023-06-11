@@ -26,4 +26,12 @@ app.post("/Cadastrar", funcionarioController.FuncionarioCreate);
 
 app.get("/Funcionarios", funcionarioController.FuncionarioListar);
 
+//PUT - ATUALIZAR
+
+app.put("/Funcionarios/:id", funcionarioController.FuncionarioUpdate);
+
+//DELETE - DELETAR
+
+app.delete("/Funcionarios/:id", funcionarioController.FuncionarioDelete);
+
 app.listen(3000);
