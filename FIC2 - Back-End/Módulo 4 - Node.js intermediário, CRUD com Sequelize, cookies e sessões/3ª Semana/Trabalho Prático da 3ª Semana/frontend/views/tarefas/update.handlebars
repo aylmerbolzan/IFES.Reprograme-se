@@ -1,0 +1,30 @@
+<h1 class="text-center my-3">Atualizar Tarefa: {{tarefas.titulo}}</h1>
+<form action="/tarefas/Update" method="post"">
+<input type="hidden" name="id_tarefa" value="{{tarefas.id_tarefa}}" />
+<div class="row w-50 d-block m-auto g-3">
+<div class="col-12">
+<label class="form-label" for="titulo">Titulo:</label>
+<input
+class="form-control"
+type="titulo"
+name="titulo"
+id="titulo"
+value="{{tarefas.titulo}}"
+/>
+</div>
+<div class="col-12">
+<label class="form-label" for="descricao">Descrição:</label>
+<input
+class="form-control"
+type="descricao"
+name="descricao"
+id="descricao"
+value="{{tarefas.descricao}}"
+/>
+</div>
+<div>
+<input class="btn btn-primary my-3" type="submit" value="Atualizar tarefa"
+/>
+</div>
+</div>
+</form>

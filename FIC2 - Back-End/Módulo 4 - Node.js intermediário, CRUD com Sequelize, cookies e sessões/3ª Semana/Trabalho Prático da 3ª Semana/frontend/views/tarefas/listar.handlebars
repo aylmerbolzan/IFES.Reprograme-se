@@ -1,0 +1,33 @@
+<h1 class="text-center my-3">Lista de tarefas</h1>
+  <table class="table">
+  <div class="row">
+    <div class="col-12">
+      <thead>
+        <th>Código da tarefa</th>
+        <th>Título</th>
+        <th>Descrição</th>
+      </thead>
+      <tbody>
+        {{#each tarefa}}
+        <tr>
+          <th>{{this.id_tarefa}}</th>
+          <th>{{this.titulo}}</th>
+          
+          <th>{{this.descricao}}</th>
+          <th>
+            <a href="/tarefas/Atualizar/{{this.id_tarefa}}/{{this.titulo}}/{{this.descricao}}">
+              Editar<i class="bi bi-pencil-square"></i>
+            </a>
+          </th>
+          <th>
+            <form class="borde-0 m-0" action="/tarefas/Delete" method="POST">
+            <input type="hidden" name="id_tarefa" value={{this.id_tarefa}}>
+            <input type="submit" value="Excluir" name="Excluir"/>
+            </form>
+          </th>
+        </tr>
+        {{/each}}
+      </tbody>
+    </div>
+  </div>
+</table>

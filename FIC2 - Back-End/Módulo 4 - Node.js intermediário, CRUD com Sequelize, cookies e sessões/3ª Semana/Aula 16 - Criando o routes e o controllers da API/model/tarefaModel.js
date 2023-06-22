@@ -2,16 +2,14 @@ const Sequelize = require("sequelize");
 const database = require("../db/db");
 const Usuario = require("./usuarioModel");
 
-const Tarefa = database.define(
-  "tarefa",
-  {
+const Tarefa = database.define("tarefa", {
     id_tarefa: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
       allowNull: false,
       primaryKey: true,
     },
-    
+
     titulo: {
       type: Sequelize.STRING,
       allowNull: false,

@@ -4,7 +4,7 @@ const Sequelize = require("sequelize");
 // Configurações do banco de dados
 const sequelize = new Sequelize({
   dialect: "sqlite",
-  storage: ".mercado.sqlite",
+  storage: "./mercado.sqlite",
 });
 
 // Tratando possíveis erros
