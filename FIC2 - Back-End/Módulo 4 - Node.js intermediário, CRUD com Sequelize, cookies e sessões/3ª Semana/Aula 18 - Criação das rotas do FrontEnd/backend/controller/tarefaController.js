@@ -36,4 +36,4 @@ module.exports = class tarefaController {
     await Tarefa.destroy({ where: { id_tarefa: id_tarefa } });
     res.json({ message: "Tarefa excluída com sucesso!" });
   }
-}  
+}

@@ -1,0 +1,21 @@
+<h1 class="text-center my-3">Lista de Usuários</h1>
+  <table class="table">
+  <div class="row">
+    <div class="col-12">
+      <thead>
+        <th>Código do Usuário</th>
+        <th>Nome</th>
+        <th>E-mail</th>
+      </thead>
+      <tbody>
+        {{#each usuario}}
+        <tr>
+          <th>{{this.id_usuario}}</th>
+          <th>{{this.nome}}</th>
+          <th>{{this.email}}</th>
+        </tr>
+        {{/each}}
+      </tbody>
+    </div>
+  </div>
+</table>

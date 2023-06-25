@@ -3,11 +3,8 @@ const Services = require("../services/services");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("Seja bem Vindo ao nosso sistema de Cadastros.");
+  res.send("Seja bem Vindo ao nosso sistema de Tarefas.");
 })
-
-
-// Rotas para Tarefas
 
 router.get("/tarefas/cadastrar", (req, res) => {
   res.render("tarefas/cadastrar");
@@ -29,16 +26,5 @@ router.get("/tarefas/Atualizar/:id_tarefa/:titulo/:descricao", (req, res) => {
   }
   res.render("tarefas/update", { tarefas });
 })
-
-
-// Rotas para Usuários
-
-router.get("/usuarios/cadastrar", (req, res) => {
-  res.render("usuarios/cadastrar");
-})
-
-router.post("/usuarios/Create", Services.UsuarioCreate);
-
-router.get("/usuarios/listar", Services.UsuarioListar);
 
 module.exports = router;

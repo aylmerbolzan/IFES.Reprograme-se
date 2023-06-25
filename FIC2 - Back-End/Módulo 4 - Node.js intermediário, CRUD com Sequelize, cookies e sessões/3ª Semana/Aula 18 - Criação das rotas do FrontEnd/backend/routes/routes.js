@@ -17,7 +17,6 @@ router.get("/usuarios/:id?", usuarioController.UsuarioListar);
 router.put("/usuarios/:id", usuarioController.UsuarioUpdate);
 // DELETE
 router.delete("/usuarios/:id", usuarioController.UsuarioDelete);
-
 ////////////////Requisições HTTP Tarefa /////////////////////
 //POST - CADASTRAR
 router.post("/tarefas/Cadastrar", tarefaController.TarefaCreate);
