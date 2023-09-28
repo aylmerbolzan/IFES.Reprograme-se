@@ -1,5 +1,5 @@
 
-# Trabalho Prático da 1ª Semana
+# Trabalho Prático da 2ª Semana
 
 Nessa atividade, você vai colocar em prática todo o conteúdo abordado ao longo da semana em uma única atividade integrada. Siga as instruções do enunciado do trabalho corretamente, observando como deve ser criado o arquivo a ser enviado.
 
