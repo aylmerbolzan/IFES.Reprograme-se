@@ -11,11 +11,8 @@ Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) apresentará os
 # Tecnologias
 
 ![HTML5](https://img.shields.io/badge/HTML5-d84924?style=for-the-badge&logo=html5&logoColor=white)
-
 ![CSS3](https://img.shields.io/badge/CSS3-2449d8?style=for-the-badge&logo=css3&logoColor=white)
-
 ![Replit](https://img.shields.io/badge/repl.it-f26207?style=for-the-badge&logo=replit&logoColor=white)
-
 ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0073c2?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
 

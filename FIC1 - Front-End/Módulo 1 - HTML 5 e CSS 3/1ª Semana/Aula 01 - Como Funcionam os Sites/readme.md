@@ -8,7 +8,6 @@ Nessa videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra como fun
 # Tecnologias
 
 ![HTML5](https://img.shields.io/badge/HTML5-d84924?style=for-the-badge&logo=html5&logoColor=white)
-
 ![CSS3](https://img.shields.io/badge/CSS3-2449d8?style=for-the-badge&logo=css3&logoColor=white)
 
 

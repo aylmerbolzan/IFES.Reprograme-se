@@ -1,7 +1,7 @@
 
 # Aula 17 - Propriedades CSS Overflow, Float, Clear e Box-Sizing
 
-Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) como tratar elementos cujo conteúdo extrapole a área disponível para tal elemento. Mostra também como usar flutuação para diagramar textos com imagens nas laterais e compor leiautes. Por fim, faz 3 estudos de caso, incluindo um álbum de fotos, um menu horizontal e um leiaute completo de uma página com cabeçalho, menu, submenu lateral, região de conteúdo e rodapé.
+Nesta videoaula, [Ricardo Maroquio](https://github.com/maroquio) mostra como tratar elementos cujo conteúdo extrapole a área disponível para tal elemento. Mostra também como usar flutuação para diagramar textos com imagens nas laterais e compor leiautes. Por fim, faz 3 estudos de caso, incluindo um álbum de fotos, um menu horizontal e um leiaute completo de uma página com cabeçalho, menu, submenu lateral, região de conteúdo e rodapé.
 
 
 [![Assistir no YouTube](https://img.youtube.com/vi/WBWt4TmLVCU/maxresdefault.jpg)](https://youtu.be/WBWt4TmLVCU)
